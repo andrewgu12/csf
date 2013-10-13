@@ -8,38 +8,55 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/app.css" />		
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/nivo-slider.css" />		
+		<script src="js/custom.modernizr.js"></script>
 	</head>
 	<body>
-		<div id="header-wrapper">
-			<div id="header">
-				<span class="left">
-					<img src="img/logo.png">
-				</span>
-				<span class="right">
-					<nav class="nav-bar">
-						
-							<ul>
-								<li><a href="#">home</a></li>
-								<li><a href="#">about</a></li>
-								<li><a href="#">volunteer</a></li>
-								<li><a href="#">media</a></li>
-								<li><a href="#" >members</a></li>
-								<li><a href="#">join</a></li>
-							</ul>
-						
-					</nav>
-				</span>
+		<div id="wrapper">
+			<div id="header-wrapper">
+				<div id="header">
+					<span class="left">
+						<img src="img/logo.png">
+					</span>
+					<span class="right">
+						<nav class="nav-bar">						
+								<ul>
+									<li><a href="#">home</a></li>
+									<li><a href="#">about</a></li>
+									<li><a href="#">volunteer</a></li>
+									<li><a href="#">media</a></li>
+									<li><a href="#" >members</a></li>
+									<li><a href="#">join</a></li>
+								</ul>						
+						</nav>
+					</span>
+				</div>
+			</div>
+			<div id="slider-wrapper">
+				<div id="slider" class="nivoSlider">
+					<img src="img/slideshow/image1.jpg" title="Welcome to CSF!"/>
+					<img src="img/slideshow/image2.jpg" title="Welcome to CSF!" />
+				</div>
+			</div>	
+			<div class="bodytext">
 			</div>
 		</div>
-
-
-
-
+		<footer>
+			&copy; Monta Vista CSF 2013 | Facebook | Website by Andrew Gu
+		</footer>
 		<!--include all JS files for both personal and Foundation-->
-		 <script>
-	  		 document.write('<script src=' + ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') + '.js><\/script>')  		
-	  	</script>  	
-		<script src="js/custom.modernizr.js"></script>
+		 <script src="js/jquery.js"></script>  	
+		<script src="js/nivo-slider.js"></script>
 		<script src="js/foundation.js"></script>
+		<script>			
+			$('#slider').nivoSlider({		
+			    effect: 'fade',
+			    directionNavHide: false,	 
+			    directionNav: true,  			    
+			    controlNav: false,
+			    prevText: ' ',
+        		    nextText: ' '            
+			});
+		</script>
 	</body>
 </html>

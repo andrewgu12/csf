@@ -1,4 +1,4 @@
-/* line 9, ../scss/styles.scss */
+/* line 11, ../scss/styles.scss */
 html, body {
   width: 100%;
   min-width: 960px;
@@ -8,8 +8,14 @@ html, body {
   color: #000000;
 }
 
-/* line 17, ../scss/styles.scss */
+/* line 19, ../scss/styles.scss */
+div#wrapper {
+  min-height: 100%;
+}
+
+/* line 22, ../scss/styles.scss */
 div#header-wrapper {
+  z-index: 1;
   height: 125px;
   min-width: 100%;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#f0f0f0));
@@ -17,20 +23,21 @@ div#header-wrapper {
   background-image: -moz-linear-gradient(top, white, #f0f0f0);
   background-image: -ms-linear-gradient(top, white, #f0f0f0);
   background-image: -o-linear-gradient(top, white, #f0f0f0);
+  box-shadow: 0px 2px 5px 5px #dfdfdf;
 }
 
-/* line 22, ../scss/styles.scss */
+/* line 28, ../scss/styles.scss */
 div#header {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 26, ../scss/styles.scss */
+/* line 32, ../scss/styles.scss */
 .nav-bar {
   height: 125px;
   font-family: "Open Sans", sans-serif;
 }
-/* line 29, ../scss/styles.scss */
+/* line 35, ../scss/styles.scss */
 .nav-bar ul {
   list-style: none;
   line-height: 125px;
@@ -39,30 +46,62 @@ div#header {
   	padding-left: 5px;
   }*/
 }
-/* line 32, ../scss/styles.scss */
+/* line 38, ../scss/styles.scss */
 .nav-bar ul li {
   display: inline;
   padding-right: 5px;
   font-size: 18px;
 }
-/* line 36, ../scss/styles.scss */
+/* line 42, ../scss/styles.scss */
 .nav-bar ul li a {
-  color: #c2c2c2;
+  color: #8f8f8f;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 42, ../scss/styles.scss */
+/* line 48, ../scss/styles.scss */
 .nav-bar ul li a:hover {
   color: #000000;
 }
 
-/* line 53, ../scss/styles.scss */
+/* line 59, ../scss/styles.scss */
+div#slider-wrapper {
+  position: relative;
+  z-index: -1;
+  min-width: 100%;
+  background-color: #f6f6f6;
+}
+
+/* line 65, ../scss/styles.scss */
+div#slider {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 69, ../scss/styles.scss */
+.bodytext {
+  padding-bottom: 30px;
+}
+
+/* line 72, ../scss/styles.scss */
+footer {
+  position: relative;
+  margin-top: -30px;
+  height: 30px;
+  clear: both;
+  background-color: #000000;
+  text-align: center;
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+/* line 83, ../scss/styles.scss */
 .left {
   float: left;
 }
 
-/* line 56, ../scss/styles.scss */
+/* line 86, ../scss/styles.scss */
 .right {
   float: right;
 }

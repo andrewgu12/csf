@@ -1,13 +1,14 @@
 /* line 9, ../scss/styles.scss */
 html, body {
   width: 100%;
+  min-width: 960px;
   height: 100%;
   margin: 0;
   font-family: "Open Sans", sans-serif;
   color: #000000;
 }
 
-/* line 16, ../scss/styles.scss */
+/* line 17, ../scss/styles.scss */
 div#header-wrapper {
   height: 125px;
   min-width: 100%;
@@ -18,36 +19,50 @@ div#header-wrapper {
   background-image: -o-linear-gradient(top, white, #f0f0f0);
 }
 
-/* line 21, ../scss/styles.scss */
+/* line 22, ../scss/styles.scss */
 div#header {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 25, ../scss/styles.scss */
-.top-bar {
+/* line 26, ../scss/styles.scss */
+.nav-bar {
   height: 125px;
   font-family: "Open Sans", sans-serif;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#f0f0f0));
-  background-image: -webkit-linear-gradient(top, white, #f0f0f0);
-  background-image: -moz-linear-gradient(top, white, #f0f0f0);
-  background-image: -ms-linear-gradient(top, white, #f0f0f0);
-  background-image: -o-linear-gradient(top, white, #f0f0f0);
 }
-/* line 30, ../scss/styles.scss */
-.top-bar .top-bar-section li a:not(.button) {
-  font-size: 19px;
-  font-weight: normal;
-  padding-left: 15px;
-  padding-right: 15px;
+/* line 29, ../scss/styles.scss */
+.nav-bar ul {
+  list-style: none;
+  line-height: 125px;
+  /*li:after {
+  	content: '/';
+  	padding-left: 5px;
+  }*/
+}
+/* line 32, ../scss/styles.scss */
+.nav-bar ul li {
+  display: inline;
+  padding-right: 5px;
+  font-size: 18px;
+}
+/* line 36, ../scss/styles.scss */
+.nav-bar ul li a {
+  color: #c2c2c2;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 42, ../scss/styles.scss */
+.nav-bar ul li a:hover {
+  color: #000000;
 }
 
-/* line 37, ../scss/styles.scss */
+/* line 53, ../scss/styles.scss */
 .left {
   float: left;
 }
 
-/* line 40, ../scss/styles.scss */
+/* line 56, ../scss/styles.scss */
 .right {
   float: right;
 }

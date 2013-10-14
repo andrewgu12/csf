@@ -80,28 +80,35 @@ div#slider {
 
 /* line 69, ../scss/styles.scss */
 .bodytext {
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 }
 
 /* line 72, ../scss/styles.scss */
 footer {
   position: relative;
-  margin-top: -30px;
-  height: 30px;
+  margin-top: -80px;
+  height: 80px;
   clear: both;
-  background-color: #000000;
+  background-color: #222222;
+  border-top: 3px solid #999999;
   text-align: center;
   color: #ffffff;
-  line-height: 30px;
+  line-height: 80px;
   font-size: 18px;
 }
 
-/* line 83, ../scss/styles.scss */
+/* line 84, ../scss/styles.scss */
+div#footer-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 88, ../scss/styles.scss */
 .left {
   float: left;
 }
 
-/* line 86, ../scss/styles.scss */
+/* line 91, ../scss/styles.scss */
 .right {
   float: right;
 }

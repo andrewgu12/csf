@@ -42,7 +42,7 @@
 			</div>
 		</div>
 		<footer>
-			&copy; Monta Vista CSF 2013 | Facebook | Website by Andrew Gu
+			&copy; Monta Vista CSF 2013 | Facebook | Email | Website by Andrew Gu
 		</footer>
 		<!--include all JS files for both personal and Foundation-->
 		 <script src="js/jquery.js"></script>  	

@@ -1,5 +1,5 @@
 $fontName: 'Open Sans', sans-serif;
-$footerHeight: 80px;
+$footerHeight: 60px;
 @mixin headerBackground {
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#f0f0f0));
    	background-image: -webkit-linear-gradient(top, #ffffff, #f0f0f0); 
@@ -75,15 +75,20 @@ footer {
 	height: $footerHeight;
 	clear: both;
 	background-color: #222222;
-	border-top: 3px solid #999999;
-	text-align: center;
+	border-top: 3px solid #999999;	
 	color: #ffffff;
 	line-height: $footerHeight;
-	font-size: 18px;
+	font-size: 16px;
 }
 div#footer-inner {
 	width: 960px;
-	margin: 0 auto;
+	margin: 0 auto;		
+	line-height: $footerHeight;
+	ul {				
+		list-style-type: none;	
+		padding: 0;
+		margin: 0;
+	}	
 }
 .left {
 	float: left;

@@ -68,6 +68,22 @@ div#slider {
 }
 .bodytext {
 	padding-bottom: $footerHeight;
+	width: 960px;
+	margin: 0  auto;
+	h1 {
+		font-size: 28px;
+	}
+}
+div#newsItem {
+	margin-left: 5px;
+	border-bottom: 1px dotted #000000;
+	h2 {
+		font-size: 16px;
+	}
+	p {
+		font-size: 14px;
+		padding: 0;
+	}
 }
 footer {
 	position: relative;

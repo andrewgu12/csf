@@ -81,9 +81,30 @@ div#slider {
 /* line 69, ../scss/styles.scss */
 .bodytext {
   padding-bottom: 60px;
+  width: 960px;
+  margin: 0  auto;
+}
+/* line 73, ../scss/styles.scss */
+.bodytext h1 {
+  font-size: 28px;
 }
 
-/* line 72, ../scss/styles.scss */
+/* line 77, ../scss/styles.scss */
+div#newsItem {
+  margin-left: 5px;
+  border-bottom: 1px dotted #000000;
+}
+/* line 80, ../scss/styles.scss */
+div#newsItem h2 {
+  font-size: 16px;
+}
+/* line 83, ../scss/styles.scss */
+div#newsItem p {
+  font-size: 14px;
+  padding: 0;
+}
+
+/* line 88, ../scss/styles.scss */
 footer {
   position: relative;
   margin-top: -60px;
@@ -96,25 +117,25 @@ footer {
   font-size: 16px;
 }
 
-/* line 83, ../scss/styles.scss */
+/* line 99, ../scss/styles.scss */
 div#footer-inner {
   width: 960px;
   margin: 0 auto;
   line-height: 60px;
 }
-/* line 87, ../scss/styles.scss */
+/* line 103, ../scss/styles.scss */
 div#footer-inner ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 93, ../scss/styles.scss */
+/* line 109, ../scss/styles.scss */
 .left {
   float: left;
 }
 
-/* line 96, ../scss/styles.scss */
+/* line 112, ../scss/styles.scss */
 .right {
   float: right;
 }

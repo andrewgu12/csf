@@ -1,3 +1,4 @@
+<?php require_once("included.php"); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,28 +9,15 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/app.css" />		
 		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/nivo-slider.css" />		
+		<link rel="stylesheet" href="css/nivo-slider.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">		
 		<script src="js/custom.modernizr.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
 			<div id="header-wrapper">
 				<div id="header">
-					<span class="left">
-						<img src="img/logo.png">
-					</span>
-					<span class="right">
-						<nav class="nav-bar">						
-								<ul>
-									<li><a href="#">home</a></li>
-									<li><a href="#">about</a></li>
-									<li><a href="#">volunteer</a></li>
-									<li><a href="#">media</a></li>
-									<li><a href="#" >members</a></li>
-									<li><a href="#">join</a></li>
-								</ul>						
-						</nav>
-					</span>
+					<?php include_once("menu.php"); ?>
 				</div>
 			</div>
 			<div id="slider-wrapper">
@@ -39,29 +27,24 @@
 				</div>
 			</div>	
 			<div class="bodytext">
+				<h1>Latest News</h1>
+				<?php
+					$result = mysqli_query($conn, "SELECT * FROM `news` ORDER BY `date` DESC LIMIT 5");
+					while($news = mysqli_fetch_array($result)){
+						$name = $news['title'];
+						$date = date("D, j M", $news['date']);
+						$content = str_replace("\n", "<br/>", $news['content']);
+						echo "<div id='newsItem'>";
+						echo "<h2>$name</h2><p class='date'>$date</p>";
+						echo "<p>$content</p>";
+						echo "</div>";
+					}
+				?>
 			</div>
 		</div>
 		<footer>
 			<div id="footer-inner">
-				<div class="row">
-					<div class="large-6 columns">
-						<ul>
-							<li>&copy; Monta Vista CSF 2013</li>					
-							<li>Website by Andrew Gu</li>					
-						</ul>
-					</div>	
-					<div class="large-2  large-offset-2 columns">
-						<ul>
-							<li>About Us</li>
-							<li>Volunteer</li>					
-						</ul>
-					</div>
-					<div class="large-2 columns">
-						<ul>
-							<li>Facebook</li>
-							<li>Contact Us</li>
-					</div>
-				</div>
+				<?php include_once("footer.php"); ?>
 			</div>
 		</footer>
 		<!--include all JS files for both personal and Foundation-->

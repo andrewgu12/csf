@@ -48,18 +48,9 @@
 			</div>
 		</footer>
 		<!--include all JS files for both personal and Foundation-->
-		 <script src="js/jquery.js"></script>  	
+		<script src="js/jquery.js"></script>  	
 		<script src="js/nivo-slider.js"></script>
 		<script src="js/foundation.js"></script>
-		<script>			
-			$('#slider').nivoSlider({		
-			    effect: 'fade',
-			    directionNavHide: false,	 
-			    directionNav: true,  			    
-			    controlNav: false,
-			    prevText: ' ',
-        		    nextText: ' '            
-			});
-		</script>
+        <script src="js/scripts.js"></script>
 	</body>
 </html>

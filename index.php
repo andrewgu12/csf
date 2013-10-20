@@ -51,6 +51,6 @@
 		<script src="js/jquery.js"></script>  	
 		<script src="js/nivo-slider.js"></script>
 		<script src="js/foundation.js"></script>
-        <script src="js/scripts.js"></script>
+      	  	<script src="js/scripts.js"></script>
 	</body>
 </html>

@@ -17,9 +17,6 @@
 		<div id="wrapper">
 			<div id="header-wrapper">
 				<div id="header">
-					<span class="left">
-						<img src="img/logo.png">
-					</span>
 					<?php include_once("menu.php"); ?>
 				</div>
 			</div>

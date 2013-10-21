@@ -17,18 +17,15 @@
 		<div id="wrapper">
 			<div id="header-wrapper">
 				<div id="header">
-					<span class="left">
-						<img src="img/logo.png">
-					</span>
 					<?php include_once("menu.php"); ?>
 				</div>
 			</div>
 			<div id="slider-wrapper">
 				<div id="slider" class="restOfThePages">
-					<img src="img/about.png"/>					
+					<img src="img/volunteer.png"/>					
 				</div>
 			</div>	
-			<div class="bodytext">
+			<div class="bodytext noPadding">
 				<div id="side-bar">	
 		                    <ul class="side-nav">		                   	  
 		                      <li class="menuOption active" id="home"><a id="sidebarLink" href="membership.php">Membership</a></li>		                      

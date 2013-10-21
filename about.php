@@ -17,9 +17,7 @@
 		<div id="wrapper">
 			<div id="header-wrapper">
 				<div id="header">
-					<span class="left">
-						<img src="img/logo.png">
-					</span>
+					
 					<?php include_once("menu.php"); ?>
 				</div>
 			</div>
@@ -28,8 +26,7 @@
 					<img src="img/about.png"/>					
 				</div>
 			</div>	
-			<div class="bodytext">
-				<h1>About Us</h1>
+			<div class="bodytext">				
 					<p>The California Scholarship Federation (CSF-CJSF) is a non-profit service organization, founded in 1921 by Mr. Charles F. Seymour who sought to honor and unify outstanding high school students in the state of California. Today, approximately 1,000 CSF chapters and 600 CJSF chapters foster the recognition, motivation and education of academically talented students, fostering in their chapter memberships the importance of community service driven by the youth. Further details about our umbrella organization are found <a href="http://csf-cjsf.org/">here.</a>
 Established in 1970, Monta Vista California Scholarship Federation is the 900th chapter of CSF, the high school division of CSF-CJSF. We emphasize high standards of scholarship and community service for high school students all over California. Since its founding MVCSF remains Monta Vista's premiere honorary service organization with over 350 active members. In the Class of 2009, MVCSF graduated 43 100% Life Members and 49 Life Members, denoting the CSF volunteers who have served their high school careers. Our chapter follows the motto "Scholarship for Service," as our members are foremost dedicated to the betterment of the community while striving for academic excellence. </p>
 					<p><b>How do I Join?</b> <br />

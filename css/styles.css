@@ -1,4 +1,3 @@
-/* line 11, ../scss/styles.scss */
 html, body {
   width: 100%;
   min-width: 960px;
@@ -8,12 +7,10 @@ html, body {
   color: #000000;
 }
 
-/* line 19, ../scss/styles.scss */
 div#wrapper {
   min-height: 100%;
 }
 
-/* line 22, ../scss/styles.scss */
 div#header-wrapper {
   z-index: 1;
   height: 125px;
@@ -26,18 +23,15 @@ div#header-wrapper {
   box-shadow: 0px 2px 5px 5px #dfdfdf;
 }
 
-/* line 28, ../scss/styles.scss */
 div#header {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 32, ../scss/styles.scss */
 .nav-bar {
   height: 125px;
   font-family: "Open Sans", sans-serif;
 }
-/* line 35, ../scss/styles.scss */
 .nav-bar ul {
   list-style: none;
   line-height: 125px;
@@ -46,25 +40,21 @@ div#header {
   	padding-left: 5px;
   }*/
 }
-/* line 38, ../scss/styles.scss */
 .nav-bar ul li {
   display: inline;
   padding-right: 5px;
   font-size: 18px;
 }
-/* line 42, ../scss/styles.scss */
 .nav-bar ul li a {
   color: #8f8f8f;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 48, ../scss/styles.scss */
 .nav-bar ul li a:hover {
   color: #000000;
 }
 
-/* line 59, ../scss/styles.scss */
 div#slider-wrapper {
   position: relative;
   z-index: -1;
@@ -72,35 +62,30 @@ div#slider-wrapper {
   background-color: #f6f6f6;
 }
 
-/* line 65, ../scss/styles.scss */
 div#slider {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 69, ../scss/styles.scss */
 .bodytext {
+  padding-top: 15px;
   padding-bottom: 70px;
   width: 960px;
   margin: 0  auto;
 }
-/* line 73, ../scss/styles.scss */
 .bodytext h1 {
   font-size: 28px;
 }
-/* line 76, ../scss/styles.scss */
 .bodytext a:hover {
   color: #0040f8;
   transition: 0.5s;
 }
-/* line 80, ../scss/styles.scss */
 .bodytext #loginForm {
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
   width: 400px;
 }
-/* line 85, ../scss/styles.scss */
 .bodytext #loginForm .button {
   float: right;
   height: 40px;
@@ -109,33 +94,31 @@ div#slider {
   padding: 0;
   margin: 0;
 }
-/* line 93, ../scss/styles.scss */
 .bodytext #loginForm .button:hover {
   color: #FFFFFF;
 }
 
-/* line 98, ../scss/styles.scss */
+.noPadding {
+  padding-top: 0;
+}
+
 div#newsItem {
   margin-left: 5px;
   border-bottom: 1px dotted #000000;
 }
-/* line 101, ../scss/styles.scss */
 div#newsItem h2 {
   font-size: 16px;
 }
-/* line 104, ../scss/styles.scss */
 div#newsItem p {
   font-size: 14px;
   padding: 0;
 }
 
-/* line 109, ../scss/styles.scss */
 div#officer {
   height: 200px;
   padding-top: 5px;
 }
 
-/* line 113, ../scss/styles.scss */
 div#side-bar {
   padding-top: 20px;
   float: left;
@@ -144,16 +127,13 @@ div#side-bar {
   text-align: center;
   display: inline;
 }
-/* line 120, ../scss/styles.scss */
 div#side-bar .side-nav {
   padding-top: 0px;
 }
-/* line 122, ../scss/styles.scss */
 div#side-bar .side-nav li {
   margin: 0;
   padding: 0;
 }
-/* line 126, ../scss/styles.scss */
 div#side-bar .side-nav .menuOption {
   width: 157px;
   height: 40px;
@@ -162,25 +142,20 @@ div#side-bar .side-nav .menuOption {
   border-bottom: 1px solid #F9F9F9;
   text-align: center;
 }
-/* line 133, ../scss/styles.scss */
 div#side-bar .side-nav .menuOption a {
   color: #000;
 }
-/* line 136, ../scss/styles.scss */
 div#side-bar .side-nav .menuOption a:hover {
   color: #000;
 }
-/* line 140, ../scss/styles.scss */
 div#side-bar .side-nav .menuOption:hover {
   background-color: #999999;
 }
-/* line 143, ../scss/styles.scss */
 div#side-bar .side-nav .active {
   background-color: #CCC;
   color: #FFF;
 }
 
-/* line 149, ../scss/styles.scss */
 div#mainContent {
   font-size: 14px;
   display: inline;
@@ -190,24 +165,22 @@ div#mainContent {
   text-align: left;
   padding-top: 10px;
 }
-/* line 157, ../scss/styles.scss */
 div#mainContent h2 {
   font-size: 18px;
 }
-/* line 160, ../scss/styles.scss */
 div#mainContent ol {
   margin-left: 20px;
 }
-/* line 162, ../scss/styles.scss */
 div#mainContent ol ul {
   margin-left: 10px;
 }
-/* line 166, ../scss/styles.scss */
+div#mainContent ul {
+  margin-left: 20px;
+}
 div#mainContent #classlists {
   padding-left: 10px;
 }
 
-/* line 170, ../scss/styles.scss */
 footer {
   position: relative;
   margin-top: -70px;
@@ -220,25 +193,21 @@ footer {
   font-size: 16px;
 }
 
-/* line 181, ../scss/styles.scss */
 div#footer-inner {
   width: 960px;
   margin: 0 auto;
   line-height: 70px;
 }
-/* line 185, ../scss/styles.scss */
 div#footer-inner ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 191, ../scss/styles.scss */
 .left {
   float: left;
 }
 
-/* line 194, ../scss/styles.scss */
 .right {
   float: right;
 }

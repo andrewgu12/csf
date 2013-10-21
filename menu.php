@@ -1,4 +1,6 @@
-
+<span class="left">
+	<a href="index.php"><img src="img/logo.png"></a>
+</span>
 <span class="right">
 	<nav class="nav-bar">						
 			<ul>

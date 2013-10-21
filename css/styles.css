@@ -93,29 +93,49 @@ div#slider {
   color: #0040f8;
   transition: 0.5s;
 }
+/* line 80, ../scss/styles.scss */
+.bodytext #loginForm {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 400px;
+}
+/* line 85, ../scss/styles.scss */
+.bodytext #loginForm .button {
+  float: right;
+  height: 40px;
+  width: 100px;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+}
+/* line 93, ../scss/styles.scss */
+.bodytext #loginForm .button:hover {
+  color: #FFFFFF;
+}
 
-/* line 81, ../scss/styles.scss */
+/* line 98, ../scss/styles.scss */
 div#newsItem {
   margin-left: 5px;
   border-bottom: 1px dotted #000000;
 }
-/* line 84, ../scss/styles.scss */
+/* line 101, ../scss/styles.scss */
 div#newsItem h2 {
   font-size: 16px;
 }
-/* line 87, ../scss/styles.scss */
+/* line 104, ../scss/styles.scss */
 div#newsItem p {
   font-size: 14px;
   padding: 0;
 }
 
-/* line 92, ../scss/styles.scss */
+/* line 109, ../scss/styles.scss */
 div#officer {
   height: 200px;
   padding-top: 5px;
 }
 
-/* line 96, ../scss/styles.scss */
+/* line 113, ../scss/styles.scss */
 div#side-bar {
   padding-top: 20px;
   float: left;
@@ -124,16 +144,16 @@ div#side-bar {
   text-align: center;
   display: inline;
 }
-/* line 103, ../scss/styles.scss */
+/* line 120, ../scss/styles.scss */
 div#side-bar .side-nav {
   padding-top: 0px;
 }
-/* line 105, ../scss/styles.scss */
+/* line 122, ../scss/styles.scss */
 div#side-bar .side-nav li {
   margin: 0;
   padding: 0;
 }
-/* line 109, ../scss/styles.scss */
+/* line 126, ../scss/styles.scss */
 div#side-bar .side-nav .menuOption {
   width: 157px;
   height: 40px;
@@ -142,25 +162,25 @@ div#side-bar .side-nav .menuOption {
   border-bottom: 1px solid #F9F9F9;
   text-align: center;
 }
-/* line 116, ../scss/styles.scss */
+/* line 133, ../scss/styles.scss */
 div#side-bar .side-nav .menuOption a {
   color: #000;
 }
-/* line 119, ../scss/styles.scss */
+/* line 136, ../scss/styles.scss */
 div#side-bar .side-nav .menuOption a:hover {
   color: #000;
 }
-/* line 123, ../scss/styles.scss */
+/* line 140, ../scss/styles.scss */
 div#side-bar .side-nav .menuOption:hover {
   background-color: #999999;
 }
-/* line 126, ../scss/styles.scss */
+/* line 143, ../scss/styles.scss */
 div#side-bar .side-nav .active {
   background-color: #CCC;
   color: #FFF;
 }
 
-/* line 132, ../scss/styles.scss */
+/* line 149, ../scss/styles.scss */
 div#mainContent {
   font-size: 14px;
   display: inline;
@@ -170,24 +190,24 @@ div#mainContent {
   text-align: left;
   padding-top: 10px;
 }
-/* line 140, ../scss/styles.scss */
+/* line 157, ../scss/styles.scss */
 div#mainContent h2 {
   font-size: 18px;
 }
-/* line 143, ../scss/styles.scss */
+/* line 160, ../scss/styles.scss */
 div#mainContent ol {
   margin-left: 20px;
 }
-/* line 145, ../scss/styles.scss */
+/* line 162, ../scss/styles.scss */
 div#mainContent ol ul {
   margin-left: 10px;
 }
-/* line 149, ../scss/styles.scss */
+/* line 166, ../scss/styles.scss */
 div#mainContent #classlists {
   padding-left: 10px;
 }
 
-/* line 153, ../scss/styles.scss */
+/* line 170, ../scss/styles.scss */
 footer {
   position: relative;
   margin-top: -70px;
@@ -200,25 +220,25 @@ footer {
   font-size: 16px;
 }
 
-/* line 164, ../scss/styles.scss */
+/* line 181, ../scss/styles.scss */
 div#footer-inner {
   width: 960px;
   margin: 0 auto;
   line-height: 70px;
 }
-/* line 168, ../scss/styles.scss */
+/* line 185, ../scss/styles.scss */
 div#footer-inner ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 174, ../scss/styles.scss */
+/* line 191, ../scss/styles.scss */
 .left {
   float: left;
 }
 
-/* line 177, ../scss/styles.scss */
+/* line 194, ../scss/styles.scss */
 .right {
   float: right;
 }

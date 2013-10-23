@@ -1,5 +1,4 @@
 /* The Nivo Slider styles */
-/* line 3, ../scss/nivo-slider.scss */
 .nivoSlider {
   position: relative;
   width: 100%;
@@ -7,7 +6,6 @@
   overflow: hidden;
 }
 
-/* line 9, ../scss/nivo-slider.scss */
 .nivoSlider img {
   position: absolute;
   top: 0px;
@@ -15,7 +13,6 @@
   max-width: none;
 }
 
-/* line 15, ../scss/nivo-slider.scss */
 .nivo-main-image {
   display: block !important;
   position: relative !important;
@@ -23,7 +20,6 @@
 }
 
 /* If an image is wrapped in a link */
-/* line 22, ../scss/nivo-slider.scss */
 .nivoSlider a.nivo-imageLink {
   position: absolute;
   top: 0px;
@@ -41,7 +37,6 @@
 }
 
 /* The slices and boxes in the Slider */
-/* line 38, ../scss/nivo-slider.scss */
 .nivo-slice {
   display: block;
   position: absolute;
@@ -50,7 +45,6 @@
   top: 0;
 }
 
-/* line 45, ../scss/nivo-slider.scss */
 .nivo-box {
   display: block;
   position: absolute;
@@ -58,13 +52,11 @@
   overflow: hidden;
 }
 
-/* line 51, ../scss/nivo-slider.scss */
 .nivo-box img {
   display: block;
 }
 
 /* Caption styles */
-/* line 54, ../scss/nivo-slider.scss */
 .nivo-caption {
   position: absolute;
   left: 0px;
@@ -89,24 +81,20 @@
   font-size: 24px;
 }
 
-/* line 74, ../scss/nivo-slider.scss */
 .nivo-caption p {
   padding: 5px;
   margin: 0;
 }
 
-/* line 78, ../scss/nivo-slider.scss */
 .nivo-caption a {
   display: inline !important;
 }
 
-/* line 81, ../scss/nivo-slider.scss */
 .nivo-html-caption {
   display: none;
 }
 
 /* Direction nav styles (e.g. Next & Prev) */
-/* line 85, ../scss/nivo-slider.scss */
 .nivo-directionNav a {
   position: absolute;
   top: 45%;
@@ -114,29 +102,24 @@
   cursor: pointer;
 }
 
-/* line 91, ../scss/nivo-slider.scss */
 .nivo-prevNav {
   left: 0px;
 }
 
-/* line 94, ../scss/nivo-slider.scss */
 .nivo-nextNav {
   right: 0px;
 }
 
 /* Control nav styles (e.g. 1,2,3...) */
-/* line 98, ../scss/nivo-slider.scss */
 .nivo-controlNav {
   text-align: center;
   padding: 15px 0;
 }
 
-/* line 102, ../scss/nivo-slider.scss */
 .nivo-controlNav a {
   cursor: pointer;
 }
 
-/* line 105, ../scss/nivo-slider.scss */
 .nivo-controlNav a.active {
   font-weight: bold;
 }

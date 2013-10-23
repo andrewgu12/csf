@@ -26,7 +26,42 @@
 				</div>
 			</div>	
 			<div class="bodytext">
-				
+				<form id="joinUs" class="custom">
+					<p>Ready to join CSF? Just fill out this form, login, and get volunteering!</p>									
+					<div class="row">
+						<div class="large-4 columns">
+							<label for="firstName" class="left inline">First Name</label>							
+							<input type="text" id="firstName" />						
+						</div>
+						<div class="large-4 columns">
+							<label for="lastName" class="left inline">Last Name</label>							
+							<input type="text" id="lastName" />						
+						</div>
+						<div class="large-4 columns">
+							<label for="grade" class="left inline">Grade</label>
+							 <select id="grade">
+							 	<option value="9">9</option>
+							 	<option value="10">10</option>
+							 	<option value="11">11</option>
+							 	<option value="12">12</option>
+							 </select>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="large-4 columns">
+							<label for="studentID" class="left inline">Student ID</label>
+							<input type="text" id="studentID" />
+						</div>
+						<div class="large-4 columns">
+							<label for ="email" class="left inline">Email</label>
+							<input type="text" id="email" />
+						</div>
+						<div class="large-4 columns">
+							<label for="phone" class="left inline">Phone Number</label>
+							<input type="text" id="phone">
+						</div>	 
+					</div>
+				</form>
 			</div>
 		</div>
 		<footer>
@@ -36,6 +71,11 @@
 		</footer>
 		<!--include all JS files for both personal and Foundation-->
 		<script src="js/jquery.js"></script>  	
+		<script>
+			  document.write('<script src=/js/'
+			    + ('__proto__' in {} ? 'zepto' : 'jquery')
+			    + '.js><\/script>');
+		</script>
 		<script src="js/nivo-slider.js"></script>
 		<script src="js/foundation.js"></script>
       	  	<script src="js/scripts.js"></script>

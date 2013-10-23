@@ -97,6 +97,12 @@ div#slider {
 .bodytext #loginForm .button:hover {
   color: #FFFFFF;
 }
+.bodytext #joinUs label {
+  margin: 0;
+}
+.bodytext #joinUs p {
+  text-align: center;
+}
 
 .noPadding {
   padding-top: 0;

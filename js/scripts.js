@@ -20,4 +20,5 @@ $(document).ready(function(){
 		prevText: ' ',
 			nextText: ' '            
 	});
+	 $(document).foundation();
 });

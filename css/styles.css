@@ -103,6 +103,12 @@ div#slider {
 .bodytext #joinUs p {
   text-align: center;
 }
+.bodytext .separation {
+  border-bottom: 1px solid #000;
+}
+.bodytext .separation .scoreBox {
+  float: right;
+}
 
 .noPadding {
   padding-top: 0;

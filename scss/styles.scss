@@ -104,6 +104,12 @@ div#slider {
 			text-align: center;
 		}
 	}
+	.separation {
+		border-bottom: 1px solid #000;
+		.scoreBox {
+			float: right;
+		}
+	}
 }
 .noPadding {
 	padding-top: 0;

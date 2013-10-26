@@ -68,7 +68,7 @@
 						<h3>List 1 Classes </h3>
 						<p>To find out which classes qualify for this list and below, visit the volunteer page and click on the Class Lists tab</p>
 						<div class="row">
-							<div class="large-3 columns">
+							<div class="large-3 columns ">
 								<label for="class1Name" class="left inline">Class Name</label>
 								<input type="text" id="class1Name" />
 							</div>			
@@ -82,7 +82,7 @@
 							</div>				
 							<div class="large-1 columns">
 								<label for="class1Grade" class="left inline">Grade</label>
-								<select id="class1Grade">
+								<select id="class1Grade" class="section1">
 									<option value="A">A</option>
 									<option value="B">B</option>
 									<option value="C">C</option>
@@ -104,7 +104,7 @@
 							</div>				
 							<div class="large-1 columns">
 								<label for="class2Grade" class="left inline">Grade</label>
-								<select id="class2Grade">
+								<select id="class2Grade" class="section1">
 									<option value="A">A</option>
 									<option value="B">B</option>
 									<option value="C">C</option>
@@ -128,7 +128,7 @@
 							</div>				
 							<div class="large-1 columns">
 								<label for="class3Grade" class="left inline">Grade</label>
-								<select id="class3Grade">
+								<select id="class3Grade" class="section1">
 									<option value="A">A</option>
 									<option value="B">B</option>
 									<option value="C">C</option>
@@ -150,7 +150,7 @@
 							</div>				
 							<div class="large-1 columns">
 								<label for="class4Grade" class="left inline">Grade</label>
-								<select id="class4Grade">
+								<select id="class4Grade" class="section1">
 									<option value="A">A</option>
 									<option value="B">B</option>
 									<option value="C">C</option>
@@ -174,7 +174,7 @@
 							</div>				
 							<div class="large-1 columns">
 								<label for="class5Grade" class="left inline">Grade</label>
-								<select id="class5Grade">
+								<select id="class5Grade" class="section1">
 									<option value="A">A</option>
 									<option value="B">B</option>
 									<option value="C">C</option>
@@ -196,7 +196,7 @@
 							</div>				
 							<div class="large-1 columns">
 								<label for="class6Grade" class="left inline">Grade</label>
-								<select id="class6Grade">
+								<select id="class6Grade" class="section1">
 									<option value="A">A</option>
 									<option value="B">B</option>
 									<option value="C">C</option>
@@ -220,7 +220,7 @@
 							</div>				
 							<div class="large-1 columns">
 								<label for="class7Grade" class="left inline">Grade</label>
-								<select id="class7Grade">
+								<select id="class7Grade" class="section1">
 									<option value="A">A</option>
 									<option value="B">B</option>
 									<option value="C">C</option>
@@ -228,14 +228,204 @@
 									<option value="F">F</option>
 								</select>	
 							</div>
-							<div class="large-6 columns">
-								<divclass="scoreBox">
-									<label for="subscore1" class="left inline">Score</label>
+							<div class="large-2 offset-4 columns">
+								<div class="scoreBox">
+										<label for="subscore1" class="left inline">Subscore</label>
 										<input type="text" id="subscore1"  disabled/> 
 								</div>
 							</div>											
 						</div><!--end row-->
 					</div>
+					<div class="separation">
+						<h3>List 2 Classes</h3>
+						<div class="row">
+							<div class="large-3 columns">
+								<label for="class8Name" class="left inline">Class Name</label>
+								<input type="text" id="class8Name" />
+							</div>			
+							<div class="large-2 columns">
+								<label for="class8Weight" class="left inline">Class Weight</label>
+								<select id="class8Weight">
+									<option value="r">No Weight</option>
+									<option value="h">Honors</option>
+									<option value="ap">AP</option>
+								</select>
+							</div>				
+							<div class="large-1 columns">
+								<label for="class8Grade" class="left inline">Grade</label>
+								<select id="class8Grade" class="section2">
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="D">D</option>
+									<option value="F">F</option>
+								</select>	
+							</div>						
+							<div class="large-3 columns">
+								<label for="class9Name" class="left inline">Class Name</label>
+								<input type="text" id="class9Name" />
+							</div>			
+							<div class="large-2 columns">
+								<label for="class9Weight" class="left inline">Class Weight</label>
+								<select id="class9Weight">
+									<option value="r">No Weight</option>
+									<option value="h">Honors</option>
+									<option value="ap">AP</option>
+								</select>
+							</div>				
+							<div class="large-1 columns">
+								<label for="class9Grade" class="left inline">Grade</label>
+								<select id="class9Grade" class="section2">
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="D">D</option>
+									<option value="F">F</option>
+								</select>	
+							</div>						
+						</div><!--end row-->
+						<div class="row">
+							<div class="large-3 columns">
+								<label for="class10Name" class="left inline">Class Name</label>
+								<input type="text" id="class10Name" />
+							</div>			
+							<div class="large-2 columns">
+								<label for="class10Weight" class="left inline">Class Weight</label>
+								<select id="class10Weight">
+									<option value="r">No Weight</option>
+									<option value="h">Honors</option>
+									<option value="ap">AP</option>
+								</select>
+							</div>				
+							<div class="large-1 columns">
+								<label for="class10Grade" class="left inline">Grade</label>
+								<select id="class10Grade" class="section2">
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="D">D</option>
+									<option value="F">F</option>
+								</select>	
+							</div>						
+							<div class="large-3 columns">
+								<label for="class11Name" class="left inline">Class Name</label>
+								<input type="text" id="class11Name" />
+							</div>			
+							<div class="large-2 columns">
+								<label for="class11Weight" class="left inline">Class Weight</label>
+								<select id="class11Weight">
+									<option value="r">No Weight</option>
+									<option value="h">Honors</option>
+									<option value="ap">AP</option>
+								</select>
+							</div>				
+							<div class="large-1 columns">
+								<label for="class11Grade" class="left inline">Grade</label>
+								<select id="class11Grade" class="section2">
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="D">D</option>
+									<option value="F">F</option>
+								</select>	
+							</div>						
+						</div><!--end row-->
+						<div class="row">
+							<div class="large-2 offset-10 right columns">
+								<div class="scoreBox">
+										<label for="subscore2" class="left inline">Subscore</label>
+										<input type="text" id="subscore2"  disabled/> 
+								</div>
+							</div>	
+						</div>
+					</div><!--end list 2 classes-->
+					<div class="separation">
+						<h3>List 3 Classes</h3>
+						<div class="row">
+							<div class="large-3 columns">
+								<label for="class12Name" class="left inline">Class Name</label>
+								<input type="text" id="class12Name" />
+							</div>			
+							<div class="large-2 columns">
+								<label for="class12Weight" class="left inline">Class Weight</label>
+								<select id="class12Weight">
+									<option value="r">No Weight</option>
+									<option value="h">Honors</option>
+									<option value="ap">AP</option>
+								</select>
+							</div>				
+							<div class="large-1 columns">
+								<label for="class12Grade" class="left inline">Grade</label>
+								<select id="classGrade" class="section2">
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="D">D</option>
+									<option value="F">F</option>
+								</select>	
+							</div>						
+							<div class="large-3 columns">
+								<label for="class13Name" class="left inline">Class Name</label>
+								<input type="text" id="class13Name" />
+							</div>			
+							<div class="large-2 columns">
+								<label for="class13Weight" class="left inline">Class Weight</label>
+								<select id="class13Weight">
+									<option value="r">No Weight</option>
+									<option value="h">Honors</option>
+									<option value="ap">AP</option>
+								</select>
+							</div>				
+							<div class="large-1 columns">
+								<label for="class13Grade" class="left inline">Grade</label>
+								<select id="class13Grade" class="section2">
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="D">D</option>
+									<option value="F">F</option>
+								</select>	
+							</div>						
+						</div><!--end row-->
+						<div class="row">
+							<div class="large-3 columns">
+								<label for="class14Name" class="left inline">Class Name</label>
+								<input type="text" id="class14Name" />
+							</div>			
+							<div class="large-2 columns">
+								<label for="class14Weight" class="left inline">Class Weight</label>
+								<select id="class14Weight">
+									<option value="r">No Weight</option>
+									<option value="h">Honors</option>
+									<option value="ap">AP</option>
+								</select>
+							</div>				
+							<div class="large-1 columns">
+								<label for="class14Grade" class="left inline">Grade</label>
+								<select id="class14Grade" class="section2">
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="D">D</option>
+									<option value="F">F</option>
+								</select>	
+							</div>																
+								<div class="large-2 offset-4 right columns">
+									<div class="scoreBox">
+											<label for="subscore2" class="left inline">Subscore</label>
+											<input type="text" id="subscore2"  disabled/> 
+									</div>
+								</div>								
+						</div><!--end row-->						
+					</div><!--end list 3 classes-->
+					<div class="row">
+							<div class="large-2 offset-10 right columns">
+								<div class="scoreBox">
+										<label for="totalscore" class="left inline">Total Score</label>
+										<input type="text" id="totalscore"  disabled/> 
+								</div>
+							</div>	
+						</div>
 				</form>
 			</div>
 		</div>

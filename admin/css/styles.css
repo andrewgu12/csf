@@ -1,0 +1,84 @@
+/*Stylesheet by Andrew Gu*/
+/* line 3, ../scss/styles.scss */
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 7, ../scss/styles.scss */
+body {
+  background: -webkit-gradient(radial, circle, 0, circle, 70, color-stop(0%, #039503), color-stop(70%, #014901));
+  background: -webkit-radial-gradient(circle, #039503 0%, #014901 70%);
+  background: -moz-radial-gradient(circle, #039503 0%, #014901 70%);
+  background: -o-radial-gradient(circle, #039503 0%, #014901 70%);
+  background: radial-gradient(circle, #039503 0%, #014901 70%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 16, ../scss/styles.scss */
+div#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 5px #323232;
+  -moz-box-shadow: 0px 4px 5px #323232;
+  box-shadow: 0px 4px 5px #323232;
+}
+
+/* line 25, ../scss/styles.scss */
+div#banner {
+  width: 960px;
+  height: 110px;
+  padding-top: 5px;
+  border-bottom: 5px solid #000;
+}
+/* line 30, ../scss/styles.scss */
+div#banner img {
+  float: left;
+}
+
+/* line 34, ../scss/styles.scss */
+div#content {
+  height: 100%;
+  min-height: 400px;
+}
+
+/* line 38, ../scss/styles.scss */
+#sidebar {
+  width: 157px;
+  float: left;
+  height: 400px;
+  display: inline;
+}
+/* line 43, ../scss/styles.scss */
+#sidebar ul {
+  list-style-type: none;
+}
+/* line 45, ../scss/styles.scss */
+#sidebar ul li {
+  height: 40px;
+  width: 157px;
+  background-color: #e9e9e9;
+  line-height: 40px;
+  border-bottom: 1px solid #F9F9F9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* line 55, ../scss/styles.scss */
+#sidebar ul li:hover {
+  background-color: #999999;
+  transition: 0.5s;
+}
+
+/* line 61, ../scss/styles.scss */
+footer {
+  padding-top: 10px;
+  border-top: 1px dotted #dadada;
+  height: 30px;
+  color: #a6a7a7;
+  font-size: 14px;
+  text-align: center;
+}

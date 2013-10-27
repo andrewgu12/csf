@@ -101,14 +101,26 @@ div#slider {
 			margin: 0;
 		}
 		p {
-			text-align: center;
+			text-align: left;
+			padding-left: 10px;
 		}
+		.buttonRow {			
+			width: 960px;
+			.button {		
+				height: 50px;	
+				width: 113px;	
+				margin-top: 10px;
+				margin-left: 45%;							
+			}
+		}
+
 	}
 	.separation {
 		border-bottom: 1px solid #000;
 		.scoreBox {
 			float: right;
 		}
+
 	}
 }
 .noPadding {

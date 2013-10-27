@@ -101,7 +101,17 @@ div#slider {
   margin: 0;
 }
 .bodytext #joinUs p {
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
+}
+.bodytext #joinUs .buttonRow {
+  width: 960px;
+}
+.bodytext #joinUs .buttonRow .button {
+  height: 50px;
+  width: 113px;
+  margin-top: 10px;
+  margin-left: 45%;
 }
 .bodytext .separation {
   border-bottom: 1px solid #000;

@@ -48,6 +48,7 @@ $(document).ready(function(){
 	 			subscore = subscore + 1;	 			
 	 		break;
 	 	}
+	 	//call function to calculate points from weighted class
 	 	addInWeightedScore(letterGrade);
 	 	var totalScore = parseInt($("#totalscore").val(), 10);
 	 	totalScore  = totalScore + subscore;
@@ -67,7 +68,7 @@ $(document).ready(function(){
 	 	}		 	
 	 	calculateTotalScore();
 	 });
-	//add in weighted scores
+	//add in weighted scores; restrictions: grade has to be A or B and can't have more than 2 points	
 	function addInWeightedScore(letterGrade) {
 		if(letterGrade == "A" || letterGrade == "B" && parseInt($("#totalWeight").val(), 10) < 2) {
 			var total = parseInt($("#totalWeight").val(), 10) + 1;			

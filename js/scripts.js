@@ -84,4 +84,13 @@ $(document).ready(function(){
 		total = subscore1 + subscore2 + subscore3 + weightedTotal;
 		$("#totalscore").val(total);
 	}
+	//get member data upon submit button
+	$("#submit").click(function({
+		var firstName = $("#firstName").val();
+		var lastName = $("#lastName").val();
+		var grade = $("#grade").val();
+		var studentID = $("#studentID").val();
+		var email = $("#email").val();
+		var phone = $("#phone").val();
+	});
 });

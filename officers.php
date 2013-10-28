@@ -8,9 +8,7 @@
 		<!--app.css has Foundation styles, styles.css has custom styles-->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/app.css" />		
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/nivo-slider.css" />
-		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">		
+		<link rel="stylesheet" href="css/styles.css" />				
 		<script src="js/custom.modernizr.js"></script>
 	</head>
 	<body>
@@ -177,8 +175,7 @@
 			</div>
 		</footer>
 		<!--include all JS files for both personal and Foundation-->
-		<script src="js/jquery.js"></script>  	
-		<script src="js/nivo-slider.js"></script>
+		<script src="js/jquery.js"></script>  			
 		<script src="js/foundation.js"></script>
       	  	<script src="js/scripts.js"></script>
 	</body>

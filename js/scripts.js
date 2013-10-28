@@ -92,5 +92,10 @@ $(document).ready(function(){
 		var studentID = $("#studentID").val();
 		var email = $("#email").val();
 		var phone = $("#phone").val();
+		var score = $("#totalscore").val();
+		if(firstName == "") {
+			$("#firstNameError").show();
+			$("#firstName").appendClass("error");
+		}
 	});
 });

@@ -30,7 +30,8 @@
 						<div class="row">
 							<div class="large-4 columns">
 								<label for="firstName" class="left inline">First Name</label>							
-								<input type="text" id="firstName" />						
+								<input  type="text" id="firstName" />		
+								<small class="error" id="firstNameError" style="display: none;">Invalid entry</small>				
 							</div>
 							<div class="large-4 columns">
 								<label for="lastName" class="left inline">Last Name</label>							

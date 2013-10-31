@@ -61,10 +61,13 @@ div#slider-wrapper {
 	z-index: -1;
 	min-width: 100%;
 	background-color: #f6f6f6;	
-}
-div#slider {	
-	width: 960px;
-	margin: 0 auto;
+	div#slider {	
+		width: 960px;
+		margin: 0 auto;
+	}
+	.nivoSlider {
+		height: 354px;
+	}
 }
 
 .bodytext {

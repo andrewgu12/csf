@@ -12,7 +12,7 @@ $(document).ready(function(){
 		 $('#mainContent').show();	
 	});
 	//nivo slider
-	 $('#slider').nivoSlider({		
+	 $('#nivoSlider').nivoSlider({		
 		effect: 'slideInRight',
 		directionNavHide: false,	 
 		directionNav: true,  			    
@@ -85,12 +85,12 @@ $(document).ready(function(){
 		$("#totalscore").val(total);
 	}
 	//get member data upon submit button
-	$("#submit").click(function({
+	/*$("#submit").click(function({
 		var firstName = $("#firstName").val();
 		var lastName = $("#lastName").val();
 		var grade = $("#grade").val();
 		var studentID = $("#studentID").val();
 		var email = $("#email").val();
 		var phone = $("#phone").val();
-	});
+	});*/
 });

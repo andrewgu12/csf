@@ -42,7 +42,7 @@ Monta Vista CSF's strives to promote community activism at the Monta Vista campu
 			</div>
 		</footer>
 		<!--include all JS files for both personal and Foundation-->
-		<script src="js/jquery.js"></script>  			
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  			
 		<script src="js/foundation.js"></script>
       	  	<script src="js/scripts.js"></script>
 	</body>

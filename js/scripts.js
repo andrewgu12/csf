@@ -12,14 +12,7 @@ $(document).ready(function(){
 		 $('#mainContent').show();	
 	});
 	//nivo slider
-	 $('#nivoSlider').nivoSlider({		
-		effect: 'slideInRight',
-		directionNavHide: false,	 
-		directionNav: true,  			    
-		controlNav: false,
-		prevText: ' ',
-			nextText: ' '            
-	});
+
 	 $(document).foundation();	
 	 //calculate score from grades 
 	 $(".grades").change(function() {

@@ -480,7 +480,7 @@
 			</div>
 		</footer>
 		<!--include all JS files for both personal and Foundation-->
-		<script src="js/jquery.js"></script>  	
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  	
 		<script>
 			  document.write('<script src=/js/'
 			    + ('__proto__' in {} ? 'zepto' : 'jquery')

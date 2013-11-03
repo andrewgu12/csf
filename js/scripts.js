@@ -78,12 +78,41 @@ $(document).ready(function(){
 		$("#totalscore").val(total);
 	}
 	//get member data upon submit button
-	/*$("#submit").click(function({
+	$("#submit").click(function(){
 		var firstName = $("#firstName").val();
 		var lastName = $("#lastName").val();
 		var grade = $("#grade").val();
 		var studentID = $("#studentID").val();
 		var email = $("#email").val();
 		var phone = $("#phone").val();
-	});*/
+		var score = $("#totalscore").val();
+		if(firstName == "" || lastName == ""  || grade == "" || studentID == "" || email == "" || phone == "" || score <10) 
+		{
+			if(firstName == "")
+				alert("You forgot to fill out your first name!");
+			else if(lastName == "")
+				alert("You forgot to fill out your last name!");
+			else if(studentID == "")
+				alert("You forgot to put in your student ID!");
+			else if(email == "")
+				alert("You forgot to input your email!");
+			else if(phone == "")
+				alert("You forgot to input your phone number!");
+			else if(score < 10)
+				alert("Sorry, you don't have enough points to volunteer this semester!");
+		}
+		else 
+		{
+			var data = "firstName="+firstName+"&lastName="+lastName+"&grade="+grade+"&studentID="+studentID+"&email="+email+"&phone="+phone;
+			 $.ajax({
+                                type: "POST",
+                                url: "join_submit.php",
+                                data: data,
+                                success: function() {                                        
+                                       location.href="http://mvcsf.com/new/success.php";
+                                        
+                                }
+                        });
+		}
+	});
 });

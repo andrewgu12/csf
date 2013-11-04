@@ -24,7 +24,7 @@
 				</div>
 			</div>	
 			<div class="bodytext">
-				<form id="joinUs">
+				<form id="joinUs"  enctype="multipart/form-data" method="post">
 					<p>Ready to join CSF? Just fill out this form, login, and get volunteering!</p>									
 					<div class="separation">
 						<div class="row">

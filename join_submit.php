@@ -11,12 +11,15 @@
 
 	$allowedExtensions = array("pdf");
 	$max_filesize = 20000;
-	$upload_path = "docs/transcripts";
-	$filename = $_FILES["transcript"]["name"];			
+	$upload_path = "docs/transcripts/";
+	$filename = $_FILES["transcript"]["name"];	
+	echo $filename;		
 	$filesize = $_FILES["transcript"]["size"];
 	$extension = $_FILES["transcript"]["type"];
-	 
-	if((in_array($extension, $allowedExtensions)) && ($filesize < $max_filesize)) {
+	 if ($_FILES["transcript"]["error"] > 0) {
+    		echo "Error: " . $_FILES["transcript"]["error"] . "<br />";
+    	}
+	else if((in_array($extension, $allowedExtensions)) && ($filesize < $max_filesize)) {
 		move_uploaded_file($_FILES["transcript"]["tmp_name"], $upload_path . $filename);
 	}
 	else if($filesize > $max_filesize){

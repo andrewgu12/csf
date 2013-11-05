@@ -102,17 +102,31 @@ $(document).ready(function(){
 				alert("Sorry, you don't have enough points to volunteer this semester!");
 		}
 		else 
-		{
-			var data = "firstName="+firstName+"&lastName="+lastName+"&grade="+grade+"&studentID="+studentID+"&email="+email+"&phone="+phone;
-			 $.ajax({
-                                type: "POST",
-                                url: "join_submit.php",
-                                data: data,
-                                success: function() {                                        
-                                       location.href="http://mvcsf.com/new/success.php";
-                                        
-                                }
-                        });
+		{			
+
+		        var transcript = $("#transcript").val();
+
+		        var data = "firstName=" + firstName + "&lastName=" + lastName + "&grade=" + grade + "&studentID=" + studentID + "&email=" + email + "&phone=" + phone;
+		        var formData = new FormData();
+
+
+		        formData.append("file", transcript);
+		        formData.append("data", data);			
+		        $.ajax({
+			            type: "POST",
+			            url: "join_submit.php",
+			            enctype: 'multipart/form-data',//optional
+			            cache: false,
+			            contentType: false,
+			            processData: false,
+			            data: {
+			                file: file,
+			                data: data
+			            },			            
+			            success: function () {
+			              	  location.href = "http://mvcsf.com/new/success.php";
+			            	}
+		        });			
 		}
 	});
 });

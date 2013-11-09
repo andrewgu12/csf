@@ -17,6 +17,8 @@ $(document).ready(function(){
 	 //calculate score from grades 
 	 $(".grades").change(function() {
 	 	var gradeNumber = $(this).attr("id");
+	 	var classNumber = gradeNumber.split("Grade", 1);
+	 	var weightNumber = classNumber + "Weight";
 	 	var section = $(this).attr('class');
 	 	section = section.split(" ",1);
 	 	switch($.trim(section)) {
@@ -42,7 +44,11 @@ $(document).ready(function(){
 	 		break;
 	 	}
 	 	//call function to calculate points from weighted class
-	 	addInWeightedScore(letterGrade);
+	 	weightNumber = "#"+weightNumber;
+	 	weight = $(weightNumber).val();
+	 	if(weight == "h" || weight=="ap")  {
+	 		addInWeightedScore(letterGrade);
+	 	}
 	 	var totalScore = parseInt($("#totalscore").val(), 10);
 	 	totalScore  = totalScore + subscore;
 		switch($.trim(section)) {
@@ -78,7 +84,7 @@ $(document).ready(function(){
 		$("#totalscore").val(total);
 	}
 	//get member data upon submit button
-	$("#submit").click(function(){
+	$("#next").click(function(){
 		var firstName = $("#firstName").val();
 		var lastName = $("#lastName").val();
 		var grade = $("#grade").val();
@@ -103,28 +109,14 @@ $(document).ready(function(){
 		}
 		else 
 		{			
-
-		        var transcript = $("#transcript").val();
-
-		        var data = "firstName=" + firstName + "&lastName=" + lastName + "&grade=" + grade + "&studentID=" + studentID + "&email=" + email + "&phone=" + phone;
-		        var formData = new FormData();
-
-
-		        formData.append("file", transcript);
-		        formData.append("data", data);			
+		        
+		        var data = "firstName=" + firstName + "&lastName=" + lastName + "&grade=" + grade + "&studentID=" + studentID + "&email=" + email + "&phone=" + phone;		        
 		        $.ajax({
 			            type: "POST",
-			            url: "join_submit.php",
-			            enctype: 'multipart/form-data',//optional
-			            cache: false,
-			            contentType: false,
-			            processData: false,
-			            data: {
-			                file: file,
-			                data: data
-			            },			            
+			            url: "join_submit.php",			            
+			            data: data, 
 			            success: function () {
-			              	  location.href = "http://mvcsf.com/new/success.php";
+			              	 $("#regform").load("submitTranscript.php");
 			            	}
 		        });			
 		}

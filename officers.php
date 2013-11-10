@@ -93,6 +93,12 @@ Outside of CSF, some of my favorite pastimes are painting and drawing. I've been
 						</div>
 					</figure>
 				</div>
+				<div id="moreInfo">
+					<h4>Ria Bhatt, President</h4>
+					<img id="face" src="img/officers/ria.jpg">
+					<p id="description">I'm Ria, and I currently act as CSF's president! As an officer, I coordinate and attend volunteer activities throughout the year, maintain contact with members through email, and handle general club business. You'll see me at weekend events and CSF member meetings :)
+Outside of CSF, some of my favorite pastimes are painting and drawing. I've been an artist for as long as I can remember, and I'm almost always involved in new projects. Along with my involvement in the art community, I spend a lot of my free time reading. I won't even try listing out my favorite books here because there are far too many. As a fellow Monta Vista student, you know that free time is rare, so when I have an extra hour or so, I usually prefer spending it with family or friends!</p>
+				</div>
 			</div>
 		</div>
 		<footer>

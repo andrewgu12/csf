@@ -121,4 +121,7 @@ $(document).ready(function(){
 		        });			
 		}
 	});
+	$("#officerInfo").click(function(){
+		alert("Get here?");
+	});
 });

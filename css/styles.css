@@ -160,6 +160,22 @@ div#officerColumn #officerInfo:hover {
   opacity: 0.8;
 }
 
+div#moreInfo {
+  width: 540px;
+  padding-left: 10px;
+  display: inline;
+}
+div#moreInfo h4 {
+  text-align: center;
+}
+div#moreInfo #face {
+  float: left;
+  margin-right: 5px;
+}
+div#moreInfo #description {
+  display: inline;
+}
+
 div#side-bar {
   padding-top: 20px;
   float: left;

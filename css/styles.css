@@ -147,17 +147,18 @@ div#officerColumn {
   width: 420px;
   float: left;
 }
-div#officerColumn .info {
+div#officerColumn .name, div#officerColumn .description {
   display: none;
 }
-div#officerColumn #officerInfo {
+div#officerColumn .officerInfo {
   float: left;
   display: inline;
   padding-right: 5px;
   padding-bottom: 5px;
 }
-div#officerColumn #officerInfo:hover {
+div#officerColumn .officerInfo:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 div#moreInfo {
@@ -170,10 +171,12 @@ div#moreInfo h4 {
 }
 div#moreInfo #face {
   float: left;
-  margin-right: 5px;
+  box-shadow: 2px 2px 2px #888888;
+  margin-right: 20px;
 }
 div#moreInfo #description {
   display: inline;
+  font-size: 14px;
 }
 
 div#side-bar {

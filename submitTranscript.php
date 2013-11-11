@@ -13,7 +13,7 @@
 			</div>
 		</div>
 		<div class="buttonRow">			
-				<input type="submit" class="button"/>			
+				<input type="submit" class="button" value="Join!"/>			
 		</div>
 	</div>
 </form>

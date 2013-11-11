@@ -147,17 +147,18 @@ div#officer {
 div#officerColumn {
 	width: 420px;
 	float: left;
-	.info {
+	.name, .description {
 		display: none;
 	}
-	#officerInfo{
+	.officerInfo{
 		float: left;
 		display: inline;
 		padding-right: 5px;
 		padding-bottom: 5px;
 	}
-	#officerInfo:hover {
+	.officerInfo:hover {
 		opacity: 0.8;
+		cursor: pointer;
 	}
 }
 div#moreInfo {
@@ -168,13 +169,15 @@ div#moreInfo {
 		text-align: center;
 	}
 	#face {
-		float: left;		
-		margin-right: 5px;
+		float: left;				
+		box-shadow: 2px 2px 2px #888888;
+		margin-right: 20px;
 	}
-	#description {
-
+	#description {		
 		display: inline;
+		font-size: 14px;
 	}
+
 }
 div#side-bar {
 	padding-top: 20px;

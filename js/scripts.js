@@ -121,7 +121,16 @@ $(document).ready(function(){
 		        });			
 		}
 	});
-	$("#officerInfo").click(function(){
-		alert("Get here?");
+	$(".officerInfo").click(function(){
+		var officer = $(this).attr("id");
+		var nameSelector = "#" + officer + ".name";
+		var imgSelector = "#"+officer+".photo"
+		var descriptionSelector = "#"+officer+".description";
+		var name = $(nameSelector).text();
+		var imageFace = $(imgSelector).attr("src");
+		var desc = $(descriptionSelector).html();
+		$("#expandedName").text(name);
+		$("#face").attr("src", imageFace);
+		$("#exapandedDesc").html(desc);
 	});
 });

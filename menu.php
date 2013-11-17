@@ -10,7 +10,7 @@
 				<li><a href="volunteer.php">volunteer</a></li>
 				<li><a href="media.php">media</a></li>
 				<li><a href="members/login.php" >members</a></li>
-				<li><a href="index.php">join</a></li>
+				<li><a href="members/index_home.php">join</a></li>
 			</ul>						
 	</nav>
 </span>

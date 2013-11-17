@@ -75,7 +75,7 @@ Outside of CSF, some of my favorite pastimes are painting and drawing. I've been
 						<img src="img/officers/amy.jpg"  id="amy" class="photo">
 						<div class="name" id="amy">Amy Tsai, Senior Project Lit Chair</div>
 						<div class="description" id="amy">
-							Some words here.
+							As Senior Project Chair, I work with Michelle to monitor book donations and coordinate book sales. I am also in charge of any long term projects CSF is involved in.<br /> Outside of CSF, I like to read, watch tv, hang out, and volunteer. 
 						</div>
 					</figure>
 					<figure class="officerInfo" id="michelle">

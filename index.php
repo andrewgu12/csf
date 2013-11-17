@@ -22,7 +22,8 @@
 			<div id="slider-wrapper">
 				<div id="slider" class="nivoSlider">
 					<img src="img/slideshow/image1.jpg" title="Welcome to CSF!"/>
-					<img src="img/slideshow/image2.jpg" title="Welcome to CSF!" />
+					<img src="img/slideshow/image2.jpg" title="Volunteer for your community" />
+					<img src="img/slideshow/image3.jpg" title="Meet new people"/>
 				</div>
 			</div>	
 			<div class="bodytext">
@@ -51,7 +52,8 @@
 		<script src="js/nivo-slider.js"></script>
 		<script>
 			 $('#slider').nivoSlider({
-				effect: 'slideInRight',
+				effect: 'fade',
+				pauseTime: 4000,
 				directionNavHide: false,	 
 				directionNav: true,  			    
 				controlNav: false,

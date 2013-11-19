@@ -31,14 +31,15 @@ div#banner {
 		float: left;
 	}
 }
+$menu-height: 440px;
 div#content {
 	height: 100%;
-	min-height: 400px;
+	min-height: $menu-height;
 }
 #sidebar {
 	width: 157px;		
 	float: left;	
-	height: 400px;
+	height: $menu-height;
 	display: inline;
 	ul {
 		list-style-type: none;		
@@ -55,6 +56,9 @@ div#content {
 		li:hover {
 			background-color: #999999;
 			transition: 0.5s;
+		}
+		a {
+			color: #000;
 		}
 	}
 }

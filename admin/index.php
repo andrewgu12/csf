@@ -15,18 +15,7 @@
 			</div>
 			<div id="content">
 				<nav id="sidebar">
-					<ul>
-						<li>Home</li>
-						<li>Post News</li>
-						<li>All News</li>
-						<li>Create Member</li>
-						<li>View Members</li>
-						<li>Create Event</li>
-						<li>View Events</li>
-						<li>Closed Events</li>
-						<li>Data Reset</li>
-						<li>Logout</li>
-					</ul>
+					<?php require_once("menu.php"); ?>
 				</nav>
 				<div id="mainContent">
 				</div>

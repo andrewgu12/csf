@@ -39,24 +39,24 @@ div#banner img {
   float: left;
 }
 
-/* line 34, ../scss/styles.scss */
+/* line 35, ../scss/styles.scss */
 div#content {
   height: 100%;
-  min-height: 400px;
+  min-height: 440px;
 }
 
-/* line 38, ../scss/styles.scss */
+/* line 39, ../scss/styles.scss */
 #sidebar {
   width: 157px;
   float: left;
-  height: 400px;
+  height: 440px;
   display: inline;
 }
-/* line 43, ../scss/styles.scss */
+/* line 44, ../scss/styles.scss */
 #sidebar ul {
   list-style-type: none;
 }
-/* line 45, ../scss/styles.scss */
+/* line 46, ../scss/styles.scss */
 #sidebar ul li {
   height: 40px;
   width: 157px;
@@ -67,13 +67,17 @@ div#content {
   margin: 0;
   padding: 0;
 }
-/* line 55, ../scss/styles.scss */
+/* line 56, ../scss/styles.scss */
 #sidebar ul li:hover {
   background-color: #999999;
   transition: 0.5s;
 }
+/* line 60, ../scss/styles.scss */
+#sidebar ul a {
+  color: #000;
+}
 
-/* line 61, ../scss/styles.scss */
+/* line 65, ../scss/styles.scss */
 footer {
   padding-top: 10px;
   border-top: 1px dotted #dadada;

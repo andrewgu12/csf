@@ -23,7 +23,7 @@
 				<div id="slider" class="nivoSlider">
 					<img src="img/slideshow/image1.jpg" title="Welcome to CSF!"/>
 					<img src="img/slideshow/image2.jpg" title="Volunteer for your community" />
-					<img src="img/slideshow/image3.jpg" title="Meet new people"/>
+					<img src="img/slideshow/image3.JPG" title="Meet new people"/>
 				</div>
 			</div>	
 			<div class="bodytext">

@@ -15,8 +15,10 @@ $(document).ready(function(){
 
 	 $(document).foundation();	
 	 //calculate score from grades 
-	 $(".grades").change(function() {
+	 var checkGrades = [];
+	 $(".grades").change(function() {	 	
 	 	var gradeNumber = $(this).attr("id");
+	 	checkGrades.push(gradeNumber);	 	
 	 	var classNumber = gradeNumber.split("Grade", 1);
 	 	var weightNumber = classNumber + "Weight";
 	 	var section = $(this).attr('class');

@@ -17,6 +17,7 @@ $(document).ready(function(){
 	 //calculate score from grades 
 	 var checkGrades = [];
 	 $(".grades").change(function() {	 	
+	 	//TODO: factor in users changing their grades/randomly adding points/shit like that 
 	 	var gradeNumber = $(this).attr("id");
 	 	checkGrades.push(gradeNumber);	 	
 	 	var classNumber = gradeNumber.split("Grade", 1);

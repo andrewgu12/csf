@@ -77,7 +77,17 @@ div#content {
   color: #000;
 }
 
-/* line 65, ../scss/styles.scss */
+/* line 66, ../scss/styles.scss */
+.loginform {
+  width: 400px;
+  margin: 0 auto;
+}
+/* line 69, ../scss/styles.scss */
+.loginform .button {
+  float: right;
+}
+
+/* line 73, ../scss/styles.scss */
 footer {
   padding-top: 10px;
   border-top: 1px dotted #dadada;

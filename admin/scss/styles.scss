@@ -62,6 +62,14 @@ div#content {
 		}
 	}
 }
+
+.loginform {
+	width: 400px;
+	margin: 0 auto;
+	.button {
+		float: right;
+	}
+}
 footer {
 	padding-top: 10px;
 	border-top: 1px dotted #dadada;

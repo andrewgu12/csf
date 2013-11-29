@@ -77,17 +77,29 @@ div#content {
   color: #000;
 }
 
-/* line 66, ../scss/styles.scss */
+/* line 65, ../scss/styles.scss */
+div#mainContent {
+  width: 100%;
+  padding-left: 170px;
+  padding-right: 10px;
+}
+/* line 69, ../scss/styles.scss */
+div#mainContent h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+/* line 74, ../scss/styles.scss */
 .loginform {
   width: 400px;
   margin: 0 auto;
 }
-/* line 69, ../scss/styles.scss */
+/* line 77, ../scss/styles.scss */
 .loginform .button {
   float: right;
 }
 
-/* line 73, ../scss/styles.scss */
+/* line 81, ../scss/styles.scss */
 footer {
   padding-top: 10px;
   border-top: 1px dotted #dadada;

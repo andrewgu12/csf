@@ -62,7 +62,15 @@ div#content {
 		}
 	}
 }
-
+div#mainContent {
+	width: 100%;
+	padding-left: 170px;
+	padding-right: 10px;
+	h1 {
+		text-align: center;
+		font-size: 36px;
+	}
+}
 .loginform {
 	width: 400px;
 	margin: 0 auto;

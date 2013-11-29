@@ -1,7 +1,5 @@
-<?php 
-	require_once("../included.php");
+<?php require_once("../included.php");
 	require_once("login.php");
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,10 +21,13 @@
 					<?php require_once("menu.php"); ?>
 				</nav>
 				<div id="mainContent">
+					<h1>CSF Officer Control Panel</h1>
+					<p>Hey all! Welcome to the CSF Officer Control Panel. Here you will have  complete control over most parts of the website.</p>
+					<p>If you have any problems with the control panel or any other aspects of the website, or if something doesn't work, contact the Webmaster immediately.</p>
 				</div>
 			</div>
 			<footer>
-				&copy; Monta Vista CSF 2013. All Rights Reserved.
+				&copy; Monta Vista CSF 2013. All Rights Reserved. RamenCMS by Andrew Gu.
 			</footer>
 		</div>
 		<script src="js/vendor/jquery.js"></script>

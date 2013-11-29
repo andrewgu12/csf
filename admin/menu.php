@@ -1,5 +1,5 @@
 <ul>
-	<li><a href="index.php">Home</a></li>
+	<li><a href="index_home.php">Home</a></li>
 	<li>Post News</li>
 	<li>All News</li>
 	<li>Upload Docs</li>
@@ -9,5 +9,5 @@
 	<li>View Events</li>
 	<li>Closed Events</li>
 	<li>Data Reset</li>
-	<li>Logout</li>
+	<li><a href="logout.php">Logout</a></li>
 </ul>

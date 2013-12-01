@@ -63,7 +63,7 @@
 				</form>
 			</div>
 			<footer>
-				&copy; Monta Vista CSF 2013. All Rights Reserved.
+				&copy; Monta Vista CSF 2013. All Rights Reserved. RamenCMS by Andrew Gu
 			</footer>
 		</div>
 		<script src="js/vendor/jquery.js"></script>

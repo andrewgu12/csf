@@ -35,7 +35,7 @@
 						$date = date("D, j M", $news['date']);
 						$content = str_replace("\n", "<br/>", $news['content']);
 						echo "<div id='newsItem'>";
-						echo "<h2>$name</h2><p class='date'>$date</p>";
+						echo "<h2>$name</h2><p class='date'><em>$date</em></p>";
 						echo "<p>$content</p>";
 						echo "</div>";
 					}

@@ -77,29 +77,43 @@ div#content {
   color: #000;
 }
 
-/* line 65, ../scss/styles.scss */
+/* line 66, ../scss/styles.scss */
 div#mainContent {
   width: 100%;
   padding-left: 170px;
   padding-right: 10px;
 }
-/* line 69, ../scss/styles.scss */
+/* line 70, ../scss/styles.scss */
 div#mainContent h1 {
   text-align: center;
   font-size: 36px;
 }
-
 /* line 74, ../scss/styles.scss */
+div#mainContent #codeWords {
+  padding-left: 50px;
+}
+/* line 77, ../scss/styles.scss */
+div#mainContent form {
+  width: 700px;
+  margin: 0 auto;
+}
+/* line 80, ../scss/styles.scss */
+div#mainContent form textarea {
+  max-width: 700px;
+  min-height: 150px;
+}
+
+/* line 86, ../scss/styles.scss */
 .loginform {
   width: 400px;
   margin: 0 auto;
 }
-/* line 77, ../scss/styles.scss */
+/* line 89, ../scss/styles.scss */
 .loginform .button {
   float: right;
 }
 
-/* line 81, ../scss/styles.scss */
+/* line 93, ../scss/styles.scss */
 footer {
   padding-top: 10px;
   border-top: 1px dotted #dadada;

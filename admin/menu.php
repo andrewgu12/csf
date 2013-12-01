@@ -1,6 +1,6 @@
 <ul>
 	<li><a href="index_home.php">Home</a></li>
-	<li>Post News</li>
+	<li><a href="add_news.php">Post News</a></li>
 	<li>All News</li>
 	<li>Upload Docs</li>
 	<li>Create Members</li>

@@ -102,18 +102,32 @@ div#mainContent form textarea {
   max-width: 700px;
   min-height: 150px;
 }
+/* line 85, ../scss/styles.scss */
+div#mainContent div#newsItem {
+  margin-left: 5px;
+  border-top: 1px dotted #000000;
+}
+/* line 88, ../scss/styles.scss */
+div#mainContent div#newsItem h2 {
+  font-size: 16px;
+}
+/* line 91, ../scss/styles.scss */
+div#mainContent div#newsItem p {
+  font-size: 14px;
+  padding: 0;
+}
 
-/* line 86, ../scss/styles.scss */
+/* line 97, ../scss/styles.scss */
 .loginform {
   width: 400px;
   margin: 0 auto;
 }
-/* line 89, ../scss/styles.scss */
+/* line 100, ../scss/styles.scss */
 .loginform .button {
   float: right;
 }
 
-/* line 93, ../scss/styles.scss */
+/* line 104, ../scss/styles.scss */
 footer {
   padding-top: 10px;
   border-top: 1px dotted #dadada;

@@ -82,6 +82,17 @@ div#mainContent {
 			min-height: 150px;
 		}
 	}
+	div#newsItem {
+		margin-left: 5px;
+		border-top: 1px dotted #000000;
+		h2 {
+			font-size: 16px;
+		}
+		p {
+			font-size: 14px;
+			padding: 0;
+		}
+	}
 }
 .loginform {
 	width: 400px;

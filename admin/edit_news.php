@@ -1,12 +1,17 @@
 <?php require_once("../included.php");
 	require_once("login.php");
-
-	  if($_REQUEST['title']){
+	
+	$index = $_REQUEST['id'];
+	
+	$result = mysqli_query($conn, "SELECT * FROM `news` WHERE `index`='$index' LIMIT 1");	
+	$news = mysqli_fetch_array($result);
+					
+	 if($_REQUEST['title']){
 			$title = $_REQUEST['title'];
 			$date = time();
 			$content = $_REQUEST['actualNews'];
 			
-			mysqli_query($conn, "INSERT INTO `news` (`index`, `title`, `date`, `content`) VALUES (NULL, '$title', '$date', '$content')");
+			mysqli_query($conn, "UPDATE `news` set  `title`='$title', `date`='$date', `content`='$content' WHERE `index`='$index' LIMIT 1");
 			
 			header("Location: all_news.php");
 	  }
@@ -31,7 +36,7 @@
 					<?php require_once("menu.php"); ?>
 				</nav>
 				<div id="mainContent">
-					<h1>Add News</h1>
+					<h1>Edit News</h1>
 					<p>You can use these html tags while writing the entry.</p>					
 						<ul id="codeWords">
 							<li><code>&lt;a&gt;</code>: Link files. Usage:<code>&lt;a href=".../docs/NameOfFile.pdf"&gt;File Name&lt;/a&gt;</code>. </li>
@@ -39,18 +44,19 @@
 							<li><code>&lt;em&gt;</code>: Emphasize words. Usage: <code>&lt;em&gt;Words&lt;/em&gt;. </code></li>
 						</ul>
 						<p>Click on the 'Preview entry' link to preview your post before submission.</p>
-					<form id="submitNews" method="post" action="add_news.php">
+					<form id="submitNews" method="post">
+						
 						<label for="title" class="left">Title</label>
-						<input type="text" id="title"  name="title" placeholder="Just a title. No bigs"/>
+						<input type="text" id="title"  name="title" <?php echo 'value="'.$news['title'].'"' ; ?>/>
 						<label for="actualNews" class="left">Content</label>
-						<textarea id="actualNews" name="actualNews" class="actualNews"placeholder="Just some news. No bigs"></textarea>
+						<textarea id="actualNews" name="actualNews" class="actualNews"><?php echo htmlspecialchars($news['content']); ?></textarea>
 						<div class="row">
 							<div class="left"><a href="#" id="modal-preview-link" data-reveal-id="modal-preview">Preview entry</a></div>
 							<div class="right"><input type="submit" class="button" value="Submit"></div>
 						</div>
 					</form>
 
-
+ 
 				</div>
 			</div>
 			<footer>

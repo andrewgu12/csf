@@ -34,15 +34,15 @@
 					<h1>Add News</h1>
 					<p>You can use these html tags while writing the entry.</p>					
 						<ul id="codeWords">
-							<li><code>&lt;a&gt;</code>: Link files. Usage:<code>&lt;a href=".../docs/NameOfFile.pdf"&gt;File Name&lt;/a&gt;</code>. </li>
+							<li><code>&lt;a&gt;</code>: Link files. Usage:<code>&lt;a href="link_url"&gt;File Name&lt;/a&gt;</code>. </li>
 							<li><code>&lt;b&gt;</code>: Bold words. Usage: <code>&lt;b&gt;Words&lt;/b&gt;</code> </li>
 							<li><code>&lt;em&gt;</code>: Emphasize words. Usage: <code>&lt;em&gt;Words&lt;/em&gt;. </code></li>
 						</ul>
 						<p>Click on the 'Preview entry' link to preview your post before submission.</p>
 					<form id="submitNews" method="post" action="add_news.php">
-						<label for="title" class="left">Title</label>
+						<label for="title" class="left">Title</label><br />
 						<input type="text" id="title"  name="title" placeholder="Just a title. No bigs"/>
-						<label for="actualNews" class="left">Content</label>
+						<label for="actualNews" class="left">Content</label> <br />
 						<textarea id="actualNews" name="actualNews" class="actualNews"placeholder="Just some news. No bigs"></textarea>
 						<div class="row">
 							<div class="left"><a href="#" id="modal-preview-link" data-reveal-id="modal-preview">Preview entry</a></div>

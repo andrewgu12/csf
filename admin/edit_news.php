@@ -39,7 +39,7 @@
 					<h1>Edit News</h1>
 					<p>You can use these html tags while writing the entry.</p>					
 						<ul id="codeWords">
-							<li><code>&lt;a&gt;</code>: Link files. Usage:<code>&lt;a href=".../docs/NameOfFile.pdf"&gt;File Name&lt;/a&gt;</code>. </li>
+							<li><code>&lt;a&gt;</code>: Link files. Usage:<code>&lt;a href="link_url"&gt;File Name&lt;/a&gt;</code>.</li>
 							<li><code>&lt;b&gt;</code>: Bold words. Usage: <code>&lt;b&gt;Words&lt;/b&gt;</code> </li>
 							<li><code>&lt;em&gt;</code>: Emphasize words. Usage: <code>&lt;em&gt;Words&lt;/em&gt;. </code></li>
 						</ul>

@@ -116,18 +116,22 @@ div#mainContent div#newsItem p {
   font-size: 14px;
   padding: 0;
 }
-
 /* line 97, ../scss/styles.scss */
+div#mainContent #createMembers .row {
+  max-height: 63px;
+}
+
+/* line 102, ../scss/styles.scss */
 .loginform {
   width: 400px;
   margin: 0 auto;
 }
-/* line 100, ../scss/styles.scss */
+/* line 105, ../scss/styles.scss */
 .loginform .button {
   float: right;
 }
 
-/* line 104, ../scss/styles.scss */
+/* line 109, ../scss/styles.scss */
 footer {
   padding-top: 10px;
   border-top: 1px dotted #dadada;

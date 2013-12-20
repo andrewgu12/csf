@@ -93,6 +93,11 @@ div#mainContent {
 			padding: 0;
 		}
 	}
+	#createMembers {		
+		.row {
+			max-height: 63px;
+		}
+	}
 }
 .loginform {
 	width: 400px;

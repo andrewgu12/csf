@@ -1,5 +1,5 @@
 <?php require_once("../included.php");
-	require_once("login.php");
+	require_once("login.php");	
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,22 +21,13 @@
 					<?php require_once("menu.php"); ?>
 				</nav>
 				<div id="mainContent">
-					<h1>All News</h1>				
-						<?php
-							$result = mysqli_query($conn, "SELECT * FROM `news` ORDER BY `date` DESC");
-							while($news = mysqli_fetch_array($result)){
-								$name = $news['title'];
-								$date = date("D, j M", $news['date']);
-								$content = str_replace("\n", "<br/>", $news['content']);
-								$index = $news['index'];
-								echo "<div id='newsItem'>";
-								echo "<h2>$name</h2><p class='date'><em>$date</em></p>";
-								echo "<p>$content</p>";
-								echo "<p><a href='edit_news.php?id=$index'>Edit</a> | <a href='delete_news.php?id=$index'>Delete</a></p>";
-								echo "</div>";
-							}
-						?>
-
+					<h1>Upload Documents</h1>				
+					<p>All documents here will be located in the ../docs/ folder.</p>
+					 <p>To link to these files, replace the link_url in the href tag with "../docs/NameOfFile.pdf" (no quotes). </p>
+					<form id="uploadDocs" action="uploadPDF.php" enctype ="multipart/form-data" method="post">												
+						<input type="file" name="documents" id="documents">
+						<input type="submit" class="button" value="Upload!"/>
+					</form>
 				</div>
 			</div>
 			<footer>
@@ -48,6 +39,6 @@
 		<script>
 		$(document).foundation();
 		</script>
-		<script src="js/library.js"></script>				
+		<script src="js/library.js"></script>			
 	</body>
 </html>

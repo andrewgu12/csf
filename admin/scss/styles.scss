@@ -81,6 +81,9 @@ div#mainContent {
 			max-width: $form-width;
 			min-height: 150px;
 		}
+		.row {
+			max-height: 63px;
+		}
 	}
 	div#newsItem {
 		margin-left: 5px;
@@ -91,11 +94,6 @@ div#mainContent {
 		p {
 			font-size: 14px;
 			padding: 0;
-		}
-	}
-	#createMembers {		
-		.row {
-			max-height: 63px;
 		}
 	}
 }

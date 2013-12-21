@@ -4,7 +4,7 @@
 	<li><a href="all_news.php">All News</a></li>
 	<li><a href="upload_docs.php">Upload Docs</a></li>
 	<li><a href="members_add.php">Create Members</a></li>
-	<li>View Members</li>
+	<li><a href="members_all.php">View Members</a></li>
 	<li>Create Event</li>
 	<li>View Events</li>
 	<li>Closed Events</li>

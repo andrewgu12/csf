@@ -54,7 +54,7 @@
 							</div>
 							<div class="large-6 columns">
 								<label for="grade" class="left">Grade</label>
-								 <input type="text" id="grade" name="studID"/>
+								 <input type="text" id="grade" name="grade"/>
 							</div>
 						</div>
 						<div class="row">
@@ -77,17 +77,10 @@
 			</footer>
 		</div>
 		<script src="js/vendor/jquery.js"></script>
-		<script src="js/foundation/foundation.js"></script>
-		<script src="js/foundation/foundation.reveal.js"></script>
+		<script src="js/foundation/foundation.js"></script>		
 		<script>
 		$(document).foundation();
 		</script>
-		<script src="js/library.js"></script>		
-		<div id="modal-preview" class="reveal-modal">							
-			<h3 id="modal-title">News content</h3>
-			<div id="modal-content">
-			</div>
-			<a class="close-reveal-modal">&#215;</a>
-		</div>
+		<script src="js/library.js"></script>				
 	</body>
 </html>

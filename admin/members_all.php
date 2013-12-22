@@ -51,7 +51,7 @@
 										echo "<td>$studentid</td>";
 										echo "<td>$email</td>";
 										echo "<td>$phone</td>";
-										echo "<td><a href='members_edit.php?id=$studentid'>Edit</a> <a href='members_delete.php?id=$studentid'>Delete</a>";
+										echo "<td><a href='members_edit.php?id=$studentid'>Edit</a> <a href='javascript:void(0)' onclick=\"deleteMembers('$studentid');\">Delete</a>";
 									echo "</tr>";
 								}
 							?>
@@ -67,6 +67,7 @@
 		<script src="js/foundation/foundation.js"></script>		
 		<script>
 		$(document).foundation();
+
 		</script>
 		<script src="js/library.js"></script>				
 	</body>

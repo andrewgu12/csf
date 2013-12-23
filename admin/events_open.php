@@ -21,7 +21,7 @@
 					<?php require_once("menu.php"); ?>
 				</nav>
 				<div id="mainContent">
-					<h1>All News</h1>				
+					<h1>Open Events</h1>				
 						<?php
 							$result = mysqli_query($conn, "SELECT * FROM `activities`");							
 							while($act = mysqli_fetch_array($result)){		
@@ -60,7 +60,7 @@
 								echo "<b>Location:</b> $location<br/>";
 								echo "<b>Description:</b> $desc<br />";
 								echo "<b>Current Signups:</b> $curr <br/> <b>Signup Limit:</b> $limit<br />";
-								echo "<b>Who's Attending:</b> $user<br />";
+								echo "<b>Who's Attending:</b> $users<br />";
 								echo "<a href='events_complete.php?id=$index'>Complete</a>, <a href='events_print.php?id=$index'>Print List</a>, <a href='events_edit.php?id=$index'>Edit</a> or <a href='events_delete.php?id=$index'>Delete</a></p>";
 								echo  "</div>";
 							}

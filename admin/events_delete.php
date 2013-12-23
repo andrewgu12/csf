@@ -4,5 +4,7 @@
 
 	$index = $_REQUEST['id'];
 
-	
+	mysqli_query($conn, "DELETE FROM  `activities` WHERE `id` = '$index' LIMIT 1");
+
+	header("Location: events_open.php");
 ?>

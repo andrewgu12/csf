@@ -5,9 +5,9 @@
 	<li><a href="upload_docs.php">Upload Docs</a></li>
 	<li><a href="members_add.php">Create Members</a></li>
 	<li><a href="members_all.php">View Members</a></li>
-	<li>Create Event</li>
-	<li>View Events</li>
-	<li>Closed Events</li>
+	<li><a href="events_add.php">Create Event</a></li>
+	<li><a href="events_open.php">Open Events</a></li>
+	<li><a href="events_closed.php">Closed Events</a></li>
 	<li>Data Reset</li>
 	<li><a href="logout.php">Logout</a></li>
 </ul>

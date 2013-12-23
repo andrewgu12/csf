@@ -2,16 +2,17 @@
 	require_once("login.php");
 
 	  if($_REQUEST['studID']){	  	
-		$firstName = mysqli_real_escape_string($conn, trim($_POST['firstName']));
-		$lastName = mysqli_real_escape_string($conn, trim($_POST['lastName']));
-		$grade = mysqli_real_escape_string($conn, $_POST['grade']);
-		$id = mysqli_real_escape_string($conn, $_POST['studID']);
-		$email =  mysqli_real_escape_string($conn, $_POST['email']);
-		$phone = mysqli_real_escape_string($conn, $_POST['phone']);
+		$firstName = mysqli_real_escape_string($conn, trim($_REQUEST['firstName']));
+		$lastName = mysqli_real_escape_string($conn, trim($_REQUEST['lastName']));
+		$grade = mysqli_real_escape_string($conn, $_REQUEST['grade']);
+		$id = mysqli_real_escape_string($conn, $_REQUEST['studID']);
+		$email =  mysqli_real_escape_string($conn, $_REQUEST['email']);
+		$phone = mysqli_real_escape_string($conn, $_REQUEST['phone']);
+		$admin = mysqli_real_escape_string($conn, $_REQUEST['admin']);		
 		$password = $firstName . " " . $lastName;
 		$password = sha1($password);
 		
-		mysqli_query($conn, "INSERT INTO `user`(`studentid`, `name`, `lastName`, `email`, `password`, `hours`, `grade`, `phone`) VALUES ('$id', '$firstName', '$lastName', '$email', '$password', '0', '$grade', '$phone')") or DIE(mysqli_error($conn));
+		mysqli_query($conn, "INSERT INTO `user`(`studentid`, `name`, `lastName`, `email`, `password`, `admin`,`hours`, `grade`, `phone`) VALUES ('$id', '$firstName', '$lastName', '$email', '$admin', '$password', '0', '$grade', '$phone')") or DIE(mysqli_error($conn));
 
 	  }
 ?>
@@ -52,9 +53,16 @@
 								<label for="studID" class="left">Student ID</label>
 								<input type="text" id="studID"  name="studID" />
 							</div>
-							<div class="large-6 columns">
+							<div class="large-3 columns">
 								<label for="grade" class="left">Grade</label>
 								 <input type="text" id="grade" name="grade"/>
+							</div>
+							<div class="large-3 columns">
+								<label for="admin" class="left">Admin</label>
+								<select id="admin" name="admin">
+									<option value="enable">Yes</option>
+									<option value="no">No</option>
+								</select>
 							</div>
 						</div>
 						<div class="row">

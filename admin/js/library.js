@@ -1,7 +1,7 @@
 $(document).ready(function(){	
 	$("#modal-preview-news").click(function() {
 		var title = $("#title").val();
-		var content = $("#actualNews").val();
+		var content = $("#actualNews").val().replace(/\r\n|\r|\n/g,"<br />");
 		$("#modal-title").html(title);
 		$("#modal-content").html(content);
 	});
@@ -11,7 +11,7 @@ $(document).ready(function(){
 		var limit = $("#limit").val();
 		var time=$("#time").val();
 		var location = $("#location").val();
-		var eventDesc = $("#eventDesc").val();
+		var eventDesc = $("#eventDesc").val().replace(/\r\n|\r|\n/g,"<br />");
 		$("#modal-title").html(title);
 		$("#modal-date").html(date);
 		$("#modal-limit").html(limit);

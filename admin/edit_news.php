@@ -51,7 +51,7 @@
 						<label for="actualNews" class="left">Content</label>
 						<textarea id="actualNews" name="actualNews" class="actualNews"><?php echo htmlspecialchars($news['content']); ?></textarea>
 						<div class="row">
-							<div class="left"><a href="#" id="modal-preview-link" data-reveal-id="modal-preview">Preview entry</a></div>
+							<div class="left"><a href="#" id="modal-preview-news" data-reveal-id="modal-preview">Preview entry</a></div>
 							<div class="right"><input type="submit" class="button" value="Submit"></div>
 						</div>
 					</form>

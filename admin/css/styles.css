@@ -120,27 +120,44 @@ div#mainContent div#newsItem p {
   font-size: 14px;
   padding: 0;
 }
-/* line 102, ../scss/styles.scss */
+/* line 100, ../scss/styles.scss */
 div#mainContent div#indivEvents h2 {
   font-size: 18px;
   font-weight: bold;
 }
-/* line 107, ../scss/styles.scss */
+/* line 104, ../scss/styles.scss */
 div#mainContent div#indivEvents p {
   font-size: 14px;
 }
-
+/* line 109, ../scss/styles.scss */
+div#mainContent div#closeEvents h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
 /* line 113, ../scss/styles.scss */
+div#mainContent div#closeEvents p {
+  font-size: 16px;
+}
+/* line 117, ../scss/styles.scss */
+div#mainContent #completeEvents {
+  width: 960px;
+}
+/* line 119, ../scss/styles.scss */
+div#mainContent #completeEvents #hours {
+  width: 100px;
+}
+
+/* line 124, ../scss/styles.scss */
 .loginform {
   width: 400px;
   margin: 0 auto;
 }
-/* line 116, ../scss/styles.scss */
+/* line 127, ../scss/styles.scss */
 .loginform .button {
   float: right;
 }
 
-/* line 120, ../scss/styles.scss */
+/* line 131, ../scss/styles.scss */
 footer {
   padding-top: 10px;
   border-top: 1px dotted #dadada;

@@ -1,18 +1,33 @@
 <?php require_once("../included.php");
 	require_once("login.php");
 
-	  if($_REQUEST['title']){
-			$title = $_REQUEST['title'];
-			$date = $_REQUEST['unixtime'];
-			$limit = $_REQUEST['limit'];
-			$time = $_REQUEST['time'];
-			$location = $_REQUEST['location'];
-			$description = $_REQUEST['eventDesc'];
+	if($_REQUEST['hours']){			
+			$index = $_REQUEST['id'];
+			$result = mysqli_query($conn, "SELECT * FROM `activities` WHERE `id`='$index' LIMIT 1") or die(mysqli_error($conn));
+			$eventhours = $_REQUEST['hours'];
+			$peopleNumber = 1;
+			while($act = mysqli_fetch_array($result)){				
+				$users = substr($act['users'],1);				
+				$userarr = explode(",", $users);
+				
+				foreach($userarr as $value){
+					echo $_REQUEST['hours'];
+					$ur = mysqli_query($conn, "SELECT * FROM `user` WHERE `studentid` = '$value' LIMIT 1");
+					$ua = mysqli_fetch_array($ur);
+					echo $value;
+					$currenthours = $ua['hours'];
+					$newhours = $currenthours+$eventhours;
+					if(isset($_REQUEST[$peopleNumber]) && $_REQUEST[$peopleNumber] == 'yes') {
+						mysqli_query($conn, "UPDATE `user` SET `hours`='$newhours' WHERE `studentid`='$value' LIMIT 1");
+					}
+					$peopleNumber++;
+				}			
+			}
 			
-			mysqli_query($conn, "INSERT INTO `activities` (`name`, `date`, `desc`, `limit`, `time`, `location`) VALUES ('$title', '$date', '$description', '$limit', '$time', '$location')") or DIE($mysqli_error($conn));
+			mysqli_query($conn, "UPDATE `activities` SET `complete`='1' WHERE `id`='$index' LIMIT 1");
 			
 			header("Location: events_open.php");
-	  }
+	}			
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,35 +49,68 @@
 					<?php require_once("menu.php"); ?>
 				</nav>
 				<div id="mainContent">
-					<h1>Add Events</h1>
-					<p>You can use these html tags while writing the entry.</p>					
-						<ul id="codeWords">
-							<li><code>&lt;a&gt;</code>: Link files. Usage:<code>&lt;a href="link_url"&gt;File Name&lt;/a&gt;</code>. </li>
-							<li><code>&lt;b&gt;</code>: Bold words. Usage: <code>&lt;b&gt;Words&lt;/b&gt;</code> </li>
-							<li><code>&lt;em&gt;</code>: Emphasize words. Usage: <code>&lt;em&gt;Words&lt;/em&gt;. </code></li>
-						</ul>
-						<p>Click on the 'Preview entry' link to preview your post before submission.</p>
-					<form id="submitEvents" method="post" action="events_add.php">
-						<label for="title" class="left">Title</label><br />
-						<input type="text" id="title"  name="title"/>						
-						<label for="date" class="left">Date (MM/DD/YYYY)</label><br />
-						<input type="text" id="date"  name="date"/>
-						<input type="hidden" id="unixtime" name="unixtime"  />
-						<label for="limit" class="left">Event Limit</label>
-						<input type="text" id="limit" name="limit" />
-						<label for="time" class="left">Event Time</label>
-						<input type="text" id="time" name="time" />
-						<label for="location" class="left">Event Location</label> <br />
-						<input type="text" id="location" name="location" />
-						<label for="eventDesc" class="left">Description</label> <br />
-						<textarea id="eventDesc" name="eventDesc" ></textarea>
-						<div class="row">
-							<div class="left"><a href="#" id="modal-preview-event" data-reveal-id="modal-preview">Preview entry</a></div>
-							<div class="right"><input type="submit" class="button" value="Submit"></div>
-						</div>
+					<h1>Close Event</h1>
+					<p>This page will officially close an event and give members hours, officiallly removing it from the listings.</p>
+					<?php
+						$id = $_REQUEST['id'];
+						$query = mysqli_query($conn, "SELECT * FROM  `activities` WHERE `id` = '$id' LIMIT 1");
+						$act = mysqli_fetch_array($query) ;
+
+						$index = $act['id'];								
+						$name = $act['name'];
+						$limit = $act['limit'];
+						$close = $act['close'];
+						$curr = $act['curr'];
+						$time = $act['time'];
+						$location = $act['location'];
+						$date = date("D, j M", $act['date']);
+						$desc = str_replace("\n", "<br/>", $act['desc']);
+						$users = substr($act['users'],1);
+
+						$userarr = explode(",", $users);
+						$carpool = array(count($userarr));						
+						$users = "";
+						
+						foreach($userarr as $key=>$value){
+							$ur = mysqli_query($conn, "SELECT * FROM `user` WHERE `studentid` = '$value' LIMIT 1");
+							$ua = mysqli_fetch_array($ur);
+							$firstName = $ua['name'];
+							$lastName = $ua['lastName'];						
+							$fullName = $firstName." ".$lastName;					
+							$users .= "<br/>".$fullName;
+						}
+						echo "<div id='closeEvents'>";
+						echo "<h2>$name</h2>";
+						echo "<p><em>$date</em><br />";
+						echo "<b>Time:</b> $time<br/>";
+						echo "<b>Location: </b>$location<br/>";
+						echo "<b>Who's Attending:</b>$users<br/>";
+						echo "</p></div>";										
+					?>
+					<form action="events_complete.php?id=<?= $index ?>" method="post" id="completeEvents">
+					How many hours to give for this event?<br/><input name="hours" type="text" id="hours"/>					
+					<?php
+						echo "Who gets hours? <br />";						
+						$query = mysqli_query($conn, "SELECT * FROM  `activities` WHERE `id` = '$id' LIMIT 1");
+						$attNumber = 1;
+						while ($row = mysqli_fetch_array($query)) {
+							$attendees = substr($row['users'],1);							
+							$attarr = explode(",", $attendees);		
+
+							$atthours = array(count($attarr));							
+							foreach($attarr as $value){								
+								$ur = mysqli_query($conn, "SELECT * FROM `user` WHERE `studentid` = '$value' LIMIT 1");
+								$ua = mysqli_fetch_array($ur);
+							
+								$attendees = $ua['name']." ".$ua['lastName'];
+								echo "<input type='checkbox' name=$attNumber id=$attNumber value='yes' checked /> $attendees";
+								echo "<br />";
+								$attNumber++;
+							}
+						}
+					?>
+					<input type="submit" class="button"/>
 					</form>
-
-
 				</div>
 			</div>
 			<footer>

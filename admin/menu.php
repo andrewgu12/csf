@@ -8,6 +8,6 @@
 	<li><a href="events_add.php">Create Event</a></li>
 	<li><a href="events_open.php">Open Events</a></li>
 	<li><a href="events_closed.php">Closed Events</a></li>
-	<li>Data Reset</li>
+	<li><a href="data_reset.php">Data Reset</a></li>
 	<li><a href="logout.php">Logout</a></li>
 </ul>

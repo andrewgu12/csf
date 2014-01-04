@@ -119,20 +119,9 @@
 		</div>
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/foundation/foundation.js"></script>
-		<script src="js/foundation/foundation.reveal.js"></script>
-		<script src="js/moment.js"></script>
 		<script>
 		$(document).foundation();
 		</script>
 		<script src="js/library.js"></script>		
-		<div id="modal-preview" class="reveal-modal">							
-			Event Title: <h3 id="modal-title"></h3>
-			Event Date: <p id="modal-date"></p>
-			Event Limit: <p id="modal-limit"></p>
-			Event Time: <p id="modal-time"></p>
-			Event Location: <p id="modal-location"></p>
-			Event Description: <p id="modal-desc"></p>			
-			<a class="close-reveal-modal">&#215;</a>
-		</div>
 	</body>
 </html>

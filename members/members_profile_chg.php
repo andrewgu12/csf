@@ -1,5 +1,5 @@
 <?php
-	   include("included.php");
+	   include("../included.php");
 	   include("login.php");
 	  if($_REQUEST['name']){
 			$name = $_REQUEST['name'];
@@ -12,7 +12,7 @@
 			
 			$allowedExtensions = array("image/jpg", "image/jpeg", "image/png");
 			$max_filesize = 204800;
-			$upload_path = "images/";
+			$upload_path = "../img/members/";
 			$filename = $_FILES["file"]["name"];
 			$filesize = $_FILES["file"]["size"];
 			$extension = $_FILES["file"]["type"];		

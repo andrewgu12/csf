@@ -99,7 +99,7 @@ include('login.php'); ?>
 <script src="js/custom.modernizr.js"></script>
 <script src="js/foundation.min.js"></script>
 <script src="js/library.js"></script>
-<script src="js/search.js"></script>
+
 
 </body>
 </html>

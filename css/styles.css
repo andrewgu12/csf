@@ -338,16 +338,21 @@ footer {
   line-height: 70px;
   font-size: 16px;
 }
-
-div#footer-inner {
+footer div#footer-inner {
   width: 960px;
   margin: 0 auto;
   line-height: 70px;
 }
-div#footer-inner ul {
+footer div#footer-inner ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+footer div#footer-inner ul li a {
+  color: #FFFFFF;
+}
+footer div#footer-inner ul li a:hover {
+  border-bottom: 1px dotted #FFFFFF;
 }
 
 .left {

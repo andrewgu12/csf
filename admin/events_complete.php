@@ -10,11 +10,9 @@
 				$users = substr($act['users'],1);				
 				$userarr = explode(",", $users);
 				
-				foreach($userarr as $value){
-					echo $_REQUEST['hours'];
+				foreach($userarr as $value){					
 					$ur = mysqli_query($conn, "SELECT * FROM `user` WHERE `studentid` = '$value' LIMIT 1");
 					$ua = mysqli_fetch_array($ur);
-					echo $value;
 					$currenthours = $ua['hours'];
 					$newhours = $currenthours+$eventhours;
 					if(isset($_REQUEST[$peopleNumber]) && $_REQUEST[$peopleNumber] == 'yes') {

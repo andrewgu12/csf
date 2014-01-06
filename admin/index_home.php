@@ -32,5 +32,6 @@
 		</div>
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/foundation/foundation.js"></script>
+		<script src="js/library.js"></script>
 	</body>
 </html>

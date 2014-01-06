@@ -7,13 +7,14 @@
 	</div>
 	<div class="large-2 offset-2  right columns">
 		<ul>
-			<li>About Us</li>
-			<li>Volunteer</li>					
+			<li><a href="about.php">About Us</a></li>
+			<li><a href="volunteer.php">Volunteer</a></li>					
 		</ul>
 	</div>
 	<div class="large-2 right columns">
 		<ul>
-			<li>Facebook</li>
-			<li>Contact Us</li>
+			<li><a href="officers.php">Officers</a></li>
+			<li><a href="https://www.facebook.com/groups/412354058857516/">Facebook</a></li>
+		</ul>
 	</div>
 </div>

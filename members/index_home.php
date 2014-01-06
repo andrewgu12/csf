@@ -59,7 +59,7 @@
 		</div>
 		<footer>
 			<div id="footer-inner">
-				<?php include_once("../footer.php"); ?>
+				<?php include_once("footer.php"); ?>
 			</div>
 		</footer>
 		<!--include all JS files for both personal and Foundation-->

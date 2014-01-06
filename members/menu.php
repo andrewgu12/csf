@@ -8,7 +8,7 @@
 				<li><a href="../about.php">about</a></li>
 				<li><a href="../officers.php">officers</a></li>
 				<li><a href="../volunteer.php">volunteer</a></li>
-				<li><a href="../media.php">media</a></li>
+				<li><a href="https://plus.google.com/u/1/photos">media</a></li>
 				<li><a href="index.php" >members</a></li>
 				<li><a href="../join.php">join</a></li>
 			</ul>						

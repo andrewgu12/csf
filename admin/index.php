@@ -1,10 +1,4 @@
 <?php require_once("../included.php") ;
-	if($_REQUEST['studentid']=='admin' && $_REQUEST['password'] =='mvcsf')
-	{
-		$_SESSION['user']='admin';
-		$_SESSION['admin'] = 'admin';
-		header("Location: index_home.php");
-	}	
 	if($_REQUEST['studentid'])
 	{
 		$user = $_REQUEST['studentid'];
